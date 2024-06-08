@@ -190,7 +190,8 @@ div.project a {
     left: 0;
     width: 100%;
     height: 100%;
-    border-color: #333;
+    border: solid 1px;
+    border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(255, 255, 255, 1); /* Third and fourth service */
     box-shadow: rgb(0 0 0 / 30%) 0px 2px 15px 1px; /* Shadow effect */

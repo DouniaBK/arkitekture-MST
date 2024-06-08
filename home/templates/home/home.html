@@ -1,70 +1,103 @@
 {% extends 'home/base.html' %}
-
+{% load static %}
 {% block title %}Home - Starke-Thomsen{% endblock %}
 
 {% block content %}
-<div class="content-section">
-    <h2>Contact</h2>
-    <div class="contact-info">
-        <p>Mail: <a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a></p>
-    </div>
-</div>
 
-<div class="content-section">
-    <h2>Our Services</h2>
-    <div class="service-container">
-        <div class="service">
-            <h3>Energieberatung</h3>
-            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+<!-- Introduction section -->
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6 ">
+            <h1 class="fw-bold d-flex justify-content-center">Architekturbüro 
+                Starke-Thomsen</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
         </div>
-        <div class="service">
-            <h3>Sanierung</h3>
-            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-        </div>
-        <div class="service">
-            <h3>Planung</h3>
-            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-        </div>
-        <div class="service">
-            <h3>Denkmalpflege</h3>
-            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-        </div>
-        <div class="service">
-            <h3>Umbau</h3>
-            <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+        <div class="col-lg-6">
+            <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid rounded-right" alt="Architect House Image">
         </div>
     </div>
 </div>
 
-<div class="content-section">
-    <h2>Über Mich</h2>
-    <div class="aboutme">
-        <p>Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</p>
+<!-- Services section -->
+<div class="container mt-5 mb-5">
+    <!-- Services section -->
+    <div class="content-section">
+        <h2 class="m-5">Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Energieberatung</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="service">
+                <h3>Sanierung</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="service">
+                <h3>Planung</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="service">
+                <h3>Denkmalpflege</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="service">
+                <h3>Umbau</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="content-section">
-    <h2>Portfolio</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+<!-- About section -->
 
-    <div class="project">
-        <h3>Bestandswand Entfernung</h3>
+<div class="container mt-5 mb-5">
+    <div class="content-section">
+        <h2 class="m-5">Über Mich</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid rounded-right" alt="Architect House Image">
+        </div>
+        <div class="col-lg-6">
+            <div class="aboutme">
+                <h3 class="d-flex justify-content-center">Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Portfolio section -->
+<div class="container mt-5 mb-5">
+    <div class="content-section">
+        <h2 class="m-5">Portfolio</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">CONTINUE READING....</a>
-    </div>
 
-    <div class="project">
-        <h3>Reihenmittelhaus Dachsanierung</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#">CONTINUE READING....</a>
+        <div class="project">
+            <h3>Bestandswand Entfernung</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">CONTINUE READING....</a>
+        </div>
+
+        <div class="project">
+            <h3>Reihenmittelhaus Dachsanierung</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">CONTINUE READING....</a>
+        </div>
     </div>
 </div>
 
-<div class="content-section">
-    <h2>So erreichen Sie uns</h2>
-    <div class="contact-info">
-        <p>Mail: <a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a></p>
-        <p>Tel.: 08232 / 5054030</p>
+<!-- Contact information section -->
+<div class="container mt-5 mb-5">
+    <div class="content-section">
+        <h2 class="m-5">So erreichen Sie uns</h2>
+        <div class="contact-info">
+            <p>Mail: <a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a></p>
+            <p>Tel.: 08232 / 5054030</p>
+        </div>
     </div>
 </div>
 {% endblock %}
