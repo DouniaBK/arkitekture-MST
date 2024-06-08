@@ -157,6 +157,25 @@ div.project a {
      /*background-color: rgba(55, 128, 107, 0); Change this to your desired background color
 } */
 
+/*Introduction section */
+
+#intro-image {
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+/*about me section*/
+#aboutme-image {
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+/* buttons */
+
+#btn-green-leaf {
+    color: #fff;
+    background-color: rgba(55, 128, 107, 1); /* First and fifth service */
+    border-radius: 20px 5px 20px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
 
 /* Service background colors */
 .service:nth-child(1)::before,

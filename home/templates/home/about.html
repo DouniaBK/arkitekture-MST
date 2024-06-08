@@ -1,8 +1,27 @@
 {% extends 'home/base.html' %}
-
+{% load static %}
 {% block title %}Über Mich - Starke-Thomsen{% endblock %}
 
 {% block content %}
-<h2>Über Mich</h2>
-<p>Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</p>
+<!-- About section -->
+
+<div class="container mt-5 mb-5">
+    <div class="content-section">
+        <h1 class=" m-5 fw-bold d-flex justify-content-center">Architekturbüro 
+            Starke-Thomsen</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid" id="aboutme-image" alt="Architect House Image">
+        </div>
+        <div class="col-lg-6">
+            <div class="aboutme">
+                <h3 class="d-flex justify-content-center">Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</h3>
+                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
+        </div>
+
+    </div>
+</div>
 {% endblock %}
