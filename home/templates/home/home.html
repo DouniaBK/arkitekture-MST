@@ -11,7 +11,7 @@
             <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen</h1>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="text-center mb-4">
-                <a href="{% url 'contact' %}" class="btn btn-primary" id="btn-green-leaf">Contact Us</a>
+                <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
             </div>
         </div>
         <div class="col-lg-6">
@@ -74,26 +74,31 @@
 </div>
 
 <!-- Portfolio section -->
-<div class="container-fluid bg-light m-7">
-    <div class="container">
+<div class="container-fluid m-7" id="portfolio">
+    <div class="container p-2">
     <div class="content-section">
-        <h2 class="m-5">Portfolio</h2>
+        <h2 class="mt-5">Portfolio</h2>
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="project">
                     <img src="{% static 'home/images/project1.jpg' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
-                    <h3>Bestandswand Entfernung</h3>
+                    <h3 class="mt-5">Bestandswand Entfernung</h3>
                     <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                 </div>
+                <div class="text-center m-4">
                 <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
+                </div>
             </div>
             <div class="col-lg-6">
                 <div class="project">
                     <img src="{% static 'home/images/project2.jpg' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
-                    <h3>Reihenmittelhaus Dachsanierung</h3>
+                    <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
                     <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                 </div>
+                <div class="text-center m-4">
+            
                 <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
+                </div>
             </div>
         </div>
     </div></div>

@@ -246,6 +246,11 @@ div.service h3 {
     padding: 5px; /* Add padding inside the shape */
 }
 
+/*portfolio section */
+
+#portfolio {
+    background-color: rgba(248, 248, 248, 1);
+}
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .service {

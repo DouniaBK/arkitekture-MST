@@ -19,3 +19,8 @@ def contact_view(request):
 
 def portfolio_view(request):
     return render(request, 'home/portfolio.html')
+
+
+def footer_view(request):
+    return render(request, 'home/footer.html')
+
