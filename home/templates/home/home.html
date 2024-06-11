@@ -5,7 +5,7 @@
 {% block content %}
 
 <!-- Introduction section -->
-<div class="container mt-5 mb-5">
+<div class="container m-7">
     <div class="row">
         <div class="col-lg-6 ">
             <h1 class="fw-bold d-flex justify-content-center">Architekturbüro 
@@ -20,7 +20,7 @@
 </div>
 
 <!-- Services section -->
-<div class="container mt-5 mb-5">
+<div class="container m-7">
     <!-- Services section -->
     <div class="content-section">
         <h2 class="m-5">Our Services</h2>
@@ -51,13 +51,13 @@
 
 <!-- About section -->
 
-<div class="container mt-5 mb-5">
+<div class="container m-7">
     <div class="content-section">
         <h2 class="m-5">Über Mich</h2>
     </div>
     <div class="row">
         <div class="col-lg-6">
-            <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid" id="aboutme-image" alt="Architect House Image">
+            <img src="{% static 'home/images/aboutme-imageV3-logo-resized.jpg' %}" class="img-fluid" id="aboutme-image" alt="Architect House Image">
         </div>
         <div class="col-lg-6">
             <div class="aboutme">
@@ -71,13 +71,13 @@
 </div>
 
 <!-- Portfolio section -->
-<div class="container-fluid bg-light mt-5 mb-5">
+<div class="container-fluid bg-light m-7">
     <div class="content-section">
         <h2 class="m-5">Portfolio</h2>
         <div class="row justify-content-center">
             <div class="col-lg-4">
                 <div class="project">
-                    <img src="{% static 'home/images/project1.jpg' %}" class="img-fluid" alt="Project 1">
+                    <img src="{% static 'home/images/project1.jpg' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
                     <h3>Bestandswand Entfernung</h3>
                     <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                     <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
@@ -85,7 +85,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="project">
-                    <img src="{% static 'home/images/project2.jpg' %}" class="img-fluid" alt="Project 2">
+                    <img src="{% static 'home/images/project2.jpg' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
                     <h3>Reihenmittelhaus Dachsanierung</h3>
                     <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                     <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
@@ -96,7 +96,7 @@
 </div>
 
 <!-- Contact information section -->
-<div class="container mt-5 mb-5">
+<div class="container m-7">
     <div class="content-section">
         <h2 class="m-5">So erreichen Sie uns</h2>
         <div class="contact-info">
