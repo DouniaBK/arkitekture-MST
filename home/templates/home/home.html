@@ -7,11 +7,12 @@
 <!-- Introduction section -->
 <div class="container m-7">
     <div class="row">
-        <div class="col-lg-6 ">
-            <h1 class="fw-bold d-flex justify-content-center">Architekturbüro 
-                Starke-Thomsen</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
+        <div class="col-lg-6">
+            <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen</h1>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="text-center mb-4">
+                <a href="{% url 'contact' %}" class="btn btn-primary" id="btn-green-leaf">Contact Us</a>
+            </div>
         </div>
         <div class="col-lg-6">
             <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid" id="intro-image"  alt="Architect House Image">
@@ -23,7 +24,7 @@
 <div class="container m-7">
     <!-- Services section -->
     <div class="content-section">
-        <h2 class="m-5">Our Services</h2>
+        <h2 class="m-5 text-start">Our Services</h2>
         <div class="service-container">
             <div class="service">
                 <h3>Energieberatung</h3>
@@ -61,10 +62,12 @@
         </div>
         <div class="col-lg-6">
             <div class="aboutme">
-                <h3 class="d-flex justify-content-center">Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                <h3 class="d-flex">Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</h3>
+                <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
             </div>
+            <div class="text-center mb-4">
             <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
+            </div>
         </div>
 
     </div>
@@ -72,27 +75,28 @@
 
 <!-- Portfolio section -->
 <div class="container-fluid bg-light m-7">
+    <div class="container">
     <div class="content-section">
         <h2 class="m-5">Portfolio</h2>
         <div class="row justify-content-center">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="project">
                     <img src="{% static 'home/images/project1.jpg' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
                     <h3>Bestandswand Entfernung</h3>
-                    <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                    <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
+                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                 </div>
+                <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="project">
                     <img src="{% static 'home/images/project2.jpg' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
                     <h3>Reihenmittelhaus Dachsanierung</h3>
-                    <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                    <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
+                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
                 </div>
+                <a href="{% url 'portfolio' %}" class="btn" id="btn-green-leaf">View Project</a>
             </div>
         </div>
-    </div>
+    </div></div>
 </div>
 
 <!-- Contact information section -->

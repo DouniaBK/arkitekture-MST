@@ -20,8 +20,8 @@ body {
 }
 
 .header {
-    background: #333;
-    color: #fff;
+    background: #fcf9f9;
+    color: #0c0c0c;
     padding: 10px 0;
     text-align: center;
 }
@@ -42,8 +42,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #0f0f0f;
     text-decoration: none;
+}
+
+.navbar-logo {
+    max-width: 100px; /* Set the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .content-wrapper {
@@ -88,10 +93,8 @@ a:hover {
 
 
 div.project {
-    background: #fff;
     padding: 10px;
     margin-bottom: 40px;
-    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -104,11 +107,18 @@ div.project p, div.service p {
     margin-bottom: 10px;
 }
 
-div.project a {
+div.project a, div.service a {
     display: inline-block;
     margin-top: 10px;
     color: #007BFF;
 }
+
+div.project img, div.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Make the images have the same rounded corners as the containers */
+}
+
 
 .contact-info {
     margin-top: 40px;
@@ -265,8 +275,26 @@ div.service h3 {
         font-size: 0.8em; /* Smaller text for the services section on smaller screens */
     }
 
-    div.service h3 {
+    div.service h3, div.project h3, div.aboutme h3 {
         font-size: 1.3em; /* Smaller font size for h3 elements within services on smaller screens */
+        margin-top: revert;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size for h3 elements within services on smaller screens */
+        margin: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em; /* Smaller font size for h3 elements within services on smaller screens */
     }
 }
 
@@ -275,7 +303,24 @@ div.service h3 {
         font-size: 0.7em; /* Even smaller text for the services section on very small screens */
     }
 
+
     div.service h3 {
         font-size: 1.2em; /* Even smaller font size for h3 elements within services on very small screens */
     }
+
+    div.project h3 {
+        font-size: 1.2em; /* Even smaller font size for h3 elements within services on very small screens */
+    }
+
+    h2 {
+        font-size: 1em; /* Smaller font size for h3 elements within services on smaller screens */
+        margin: 1em;
+        margin-bottom: 5px;
+    }
+
+    main h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em; /* Smaller font size for h3 elements within services on smaller screens */
+    }
+
 }
