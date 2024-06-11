@@ -1,40 +1,39 @@
-{% load static %}
-<!-- footer.html -->
+{% load static %}<!-- footer.html -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <!-- Logo -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <img src="{% static 'home/images/logo-Architekturbüro-Starke-Thomsen-resized-nobg.png' %}" alt="Logo" class="footer-logo img-fluid">
+        <!-- First Section: Logo and Header -->
+        <div class="row mb-2">
+            <div class="col-md-6 align-self-start">
+                <img src="{% static 'home/images/logo-Architekturbüro-Starke-Thomsen-v2.png' %}" alt="Logo" class="footer-logo img-fluid">
             </div>
-            <!-- Header -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <h4 class="footer-heading">Architekturbüro Starke-Thomsen</h4>
+            <div class="col-md-6 align-self-center">
+                <h2 class="footer-heading">Architekturbüro Starke-Thomsen</h2>
             </div>
-            <!-- Contact Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+        </div>
+        
+        <!-- Second Section: Contact, Address, and Opening Hours -->
+        <div class="row mb-4">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Contact</h5>
                 <p>Phone: +1234567890</p>
                 <p>Email: info@example.com</p>
             </div>
-            <!-- Address Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Address</h5>
                 <p>123 Main Street,</p>
                 <p>City, Country</p>
             </div>
-        </div>
-        <hr class="footer-divider">
-        <div class="row">
-            <!-- Opening Hours Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Opening Hours</h5>
                 <p>Monday - Friday: 9am - 5pm</p>
                 <p>Saturday: 10am - 2pm</p>
                 <p>Sunday: Closed</p>
             </div>
-            <!-- Social Media Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+        </div>
+
+        <!-- Third Section: Social Media, Partners, and Quick Links -->
+        <div class="row">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Follow Us</h5>
                 <ul class="list-unstyled">
                     <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
@@ -42,8 +41,7 @@
                     <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
                 </ul>
             </div>
-            <!-- Partners Links Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Partners</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Partner 1</a></li>
@@ -53,8 +51,7 @@
                     <li><a href="#">Partner 5</a></li>
                 </ul>
             </div>
-            <!-- Footer Links Section -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-md-4">
                 <h5 class="footer-heading">Quick Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="#">Home</a></li>

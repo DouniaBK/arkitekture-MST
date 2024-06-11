@@ -66,13 +66,17 @@ nav ul li a {
 }
 
 .footer {
-    background: #333;
-    color: #fff;
+    background-color: rgba(248, 248, 248, 1);
+    color: #000000;
     text-align: center;
     padding: 10px 0;
     width: 100%;
 }
 
+.footer-logo {
+    max-width: 90px; /* Set the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
 .footer p {
     margin: 0;
 }
