@@ -1,0 +1,55 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="project-section m-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="project-title text-center mb-5">Reihenmittelhaus Dachsanierung</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 1" class="project-image img-fluid">
+                <p class="project-description">Bei einem Reihenmittelhaus aus dem Jahre 1972 stand die Dachsanierung an.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 2" class="project-image img-fluid">
+                <p class="project-description">Die Gelegenheit wurde genutzt, um nicht nur mehr Wohnraum im Dachgeschoss zu generieren, sondern auch die energische Sanierung durchzuführen.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 3" class="project-image img-fluid">
+                <p class="project-description">Mit zwei großzügigen Gauben konnte die Wohnfläche um ca. 40qm erhöht werden.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 4" class="project-image img-fluid">
+                <p class="project-description">Um eine Wärmebrücke zum nun mit Wohnfläche überspanntem Balkon im ersten Geschoss zu verhindern, wurde nach Fachberechnung eine ca. 20cm starke Aufputzdämmung erstellt.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="project-description">Der Innenraum wurde entsprechend der Bauherrenwünsche gestaltet. Ein weiteres Badezimmer wurde geschaffen.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="project-description">Die Bauherren: sehr zufrieden.</p>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3 class="testimonial-title">Kundenstimme</h3>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                    <p class="testimonial-author">- Max Mustermann</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -223,6 +223,11 @@ div.service h3 {
     border-radius: 20px 5px 20px 5px; /* Top-left, top-right, bottom-right, bottom-left */
 }
 
+a#btn-green-leaf.btn {
+    color: #fff!important;
+}
+
+
 /* Custome Margin */
 
 .m-7 {
@@ -238,6 +243,7 @@ div.service h3 {
     left: 0;
     width: 100%;
     height: 100%;
+    border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(55, 128, 107, 1); /* First and fifth service */
 }
@@ -249,10 +255,12 @@ div.service h3 {
     left: 0;
     width: 100%;
     height: 100%;
+    border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(202, 168, 146, 1); /* Second service */
 }
 
+/* Apply 3D shadow effect to the pseudo-elements of services 3 and 4 */
 .service:nth-child(3)::before,
 .service:nth-child(4)::before {
     content: '';
@@ -261,11 +269,31 @@ div.service h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    border: solid 1px;
     border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
-    background-color: rgba(255, 255, 255, 1); /* Third and fourth service */
-    box-shadow: rgb(0 0 0 / 30%) 0px 2px 15px 1px; /* Shadow effect */
+}
+
+/* Apply 3D shadow effect to the pseudo-elements of services 3 and 4 */
+.service:nth-child(3),
+.service:nth-child(4) {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+}
+/* Set font color to white for services with green background */
+.service:nth-child(1),
+.service:nth-child(2),
+.service:nth-child(5),
+.service:nth-child(2)::before {
+    color: #fff;
+}
+
+/* Set font color to white for services with green background */
+.service:nth-child(1),
+.service:nth-child(5),
+.service:nth-child(2)::before,
+.service:nth-child(1) h3,
+.service:nth-child(5) h3,
+.service:nth-child(2) h3 {
+    color: #fff;
 }
 
 .service h3,

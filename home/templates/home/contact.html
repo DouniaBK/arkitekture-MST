@@ -3,11 +3,31 @@
 {% block title %}Contact - Starke-Thomsen{% endblock %}
 
 {% block content %}
-<h2>Contact</h2>
-<div class="contact-info">
-    <p>Mail: <a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a></p>
-    <p>Tel.: 08232 / 5054030</p>
-    <p>Geschäftszeiten: Montag - Donnerstag 08:30 - 14:00, Freitag 08:30 - 13:30, Sa./So. nur nach Vereinbarung</p>
-    <p>Postalisch: Dipl.-Ing.(FH) M. Starke-Thomsen, Kipfbühlstr. 34, 86830 Schwabmünchen</p>
+
+<!-- Contact Form Section -->
+ <div class="container">
+        <h2 class="mt-5 text-center">So erreichen Sie uns</h2>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-12">
+                <h2 class="contact-title">Kontaktformular</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="btn-green-leaf">Senden</button>
+                </form>
+            </div>
+        </div>
+
 </div>
 {% endblock %}

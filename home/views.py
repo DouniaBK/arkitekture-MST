@@ -40,3 +40,10 @@ def disclaimer_view(request):
 def impressum_view(request):
     return render(request, 'home/impressum.html')
 
+
+def projectone_view(request):
+    return render(request, 'home/projectone.html')
+
+
+def projecttwo_view(request):
+    return render(request, 'home/projecttwo.html')

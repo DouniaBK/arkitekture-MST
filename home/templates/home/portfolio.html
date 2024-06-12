@@ -6,26 +6,34 @@
 
 
 <!-- Portfolio section -->
-<div class="container mt-5 mb-5">
+<div class="container-fluid m-7" id="portfolio">
+    <div class="container p-2">
     <div class="content-section">
-        <h2>Portfolio</h2>
-        <div class="row">
+        <h2 class="mt-5">Portfolio</h2>
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="project">
-                    <img src="{% static 'home/images/project1.jpg' %}" class="img-fluid" alt="Project 1">
-                    <h3>Bestandswand Entfernung</h3>
-                    <a href="{% url 'portfolio' %}" class="btn btn-primary">View Project</a>
+                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
+                    <h3 class="mt-5">Bestandswand Entfernung</h3>
+                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="text-center m-4">
+                <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf">View Project</a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="project">
-                    <img src="{% static 'home/images/project2.jpg' %}" class="img-fluid" alt="Project 2">
-                    <h3>Reihenmittelhaus Dachsanierung</h3>
-                    <a href="{% url 'portfolio' %}" class="btn btn-primary">View Project</a>
+                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
+                    <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
+                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="text-center m-4">
+            
+                <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf">View Project</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div></div>
 </div>
 
 {% endblock %}
