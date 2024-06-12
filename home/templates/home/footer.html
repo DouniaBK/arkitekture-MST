@@ -3,11 +3,33 @@
     <div class="container">
         <!-- First Section: Logo and Header -->
         <div class="row mb-2">
-            <div class="col-md-6 align-self-start">
+            <div class="col-md-4 align-self-center">
                 <img src="{% static 'home/images/logo-Architekturbüro-Starke-Thomsen-v2.png' %}" alt="Logo" class="footer-logo img-fluid">
             </div>
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-8 align-self-center text-center">
                 <h2 class="footer-heading">Architekturbüro Starke-Thomsen</h2>
+                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                    <li class="mr-3">
+                        <a href="https://www.linkedin.com/in/michaela-starke-thomsen-90b415309/" target="_blank">
+                            <i class="fab fa-linkedin gray-icon p-2"></i>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="https://www.facebook.com/profile.php?id=61559596775225" target="_blank">
+                            <i class="fab fa-facebook gray-icon p-2"></i>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="{% url 'contact' %}">
+                            <i class="fas fa-phone gray-icon p-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">
+                            <i class="fas fa-envelope gray-icon p-2"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -15,50 +37,56 @@
         <div class="row mb-4">
             <div class="col-md-4">
                 <h5 class="footer-heading">Contact</h5>
-                <p>Phone: +1234567890</p>
-                <p>Email: info@example.com</p>
+                <p><i class="fas fa-phone p-2"></i> Phone: +1234567890</p>
+                <p><i class="fas fa-envelope p-2"></i> Email: info@example.com</p>
             </div>
             <div class="col-md-4">
                 <h5 class="footer-heading">Address</h5>
-                <p>123 Main Street,</p>
-                <p>City, Country</p>
+                <p>Kipfbuelstr. 34,</p>
+                <p>86830 Schwabmunchen</p>
             </div>
             <div class="col-md-4">
                 <h5 class="footer-heading">Opening Hours</h5>
-                <p>Monday - Friday: 9am - 5pm</p>
-                <p>Saturday: 10am - 2pm</p>
-                <p>Sunday: Closed</p>
+                <p>Monday - Friday: 8:30am - 14:30pm</p>
+                <p>Saturday: nur nach Vereinbarung</p>
+                <p>Sunday: nur nach Vereinbarung</p>
             </div>
         </div>
 
-        <!-- Third Section: Social Media, Partners, and Quick Links -->
+        <!-- Third Section: Partners Links -->
         <div class="row">
-            <div class="col-md-4">
-                <h5 class="footer-heading">Follow Us</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
                 <h5 class="footer-heading">Partners</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Partner 1</a></li>
-                    <li><a href="#">Partner 2</a></li>
-                    <li><a href="#">Partner 3</a></li>
-                    <li><a href="#">Partner 4</a></li>
-                    <li><a href="#">Partner 5</a></li>
+                <ul class="list-unstyled d-flex justify-content-start">
+                    <li class="mr-3">
+                        <a href="https://www.kfw.de/inlandsfoerderung/Unternehmen/Energie-und-Umwelt/?kfwmc=kom.sea.google.kfwcorporate.run-of-site.sitelink|energieeffizienz&wt_cc1=brand&wt_cc2=coi&gad_source=1&gclid=CjwKCAiA_aGuBhACEiwAly57Med4vZRbGybrTMm6SFuw0DL3C3IsBTjf1mrOQ76xHJLVJExlUQ4nvhoCcM4QAvD_BwE" target="_blank">Kreditanstalt für Wiederaufbau (KfW)</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="https://www.bafa.de/DE/Energie/Heizen_mit_Erneuerbaren_Energien/Foerderprogramm_im_Ueberblick/foerderprogramm_im_ueberblick_node.html" target="_blank">Bundesamt für Wirtschaft und Ausfuhrkontrolle</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="https://www.energie-effizienz-experten.de/" target="_blank">Energie-Effizienz-Experten-Liste</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="https://www.gih.de/" target="_blank">Intressenvertretung Energieberatende</a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="https://www.mercicon.eu/" target="_blank">mercicon</a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-md-4">
-                <h5 class="footer-heading">Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Fourth Section: Legal Links and Copyright -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-unstyled d-flex justify-content-center mb-0">
+                    <li class="mr-3"><a href="{% url 'impressum' %}">Terms of Use</a></li>
+                    <li class="mr-3"><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                    <li class="mr-3"><a href="{% url 'disclaimer' %}">Disclaimer</a></li>
+                    <li class="mr-3">© Copyright 2024. Alle Rechte vorbehalten.</li>
                 </ul>
             </div>
         </div>

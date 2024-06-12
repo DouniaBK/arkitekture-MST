@@ -65,6 +65,7 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+/* Footer */
 .footer {
     background-color: rgba(248, 248, 248, 1);
     color: #000000;
@@ -81,13 +82,39 @@ nav ul li a {
     margin: 0;
 }
 
+.footer-heading {
+    margin-bottom: 1rem;
+}
+
+.gray-icon {
+    color: #343a40;;
+    font-size: 1.2rem;
+}
+
+.gray-icon:hover {
+    color: darkgray;
+}
+
+.footer-divider {
+    border-top: 1px solid #dee2e6;
+    margin: 1.5rem 0;
+}
+
+.list-unstyled.d-flex.justify-content-start > li {
+    margin-right: 1rem;
+}
+
+.list-unstyled.d-flex.justify-content-center > li {
+    margin-right: 1rem;
+}
+
+/* projects & services */
 h3 {
     color: #333;
     margin-top: 20px;
 }
 
-a {
-    color: #007BFF;
+a { color: #0f0f0f!important;
     text-decoration: none;
 }
 
@@ -114,7 +141,6 @@ div.project p, div.service p {
 div.project a, div.service a {
     display: inline-block;
     margin-top: 10px;
-    color: #007BFF;
 }
 
 div.project img, div.service img {

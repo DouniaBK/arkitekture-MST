@@ -24,3 +24,19 @@ def portfolio_view(request):
 def footer_view(request):
     return render(request, 'home/footer.html')
 
+
+def terms_view(request):
+    return render(request, 'home/terms.html')
+
+
+def privacy_view(request):
+    return render(request, 'home/privacy.html')
+
+
+def disclaimer_view(request):
+    return render(request, 'home/disclaimer.html')
+
+
+def impressum_view(request):
+    return render(request, 'home/impressum.html')
+
