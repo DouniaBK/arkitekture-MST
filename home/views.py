@@ -3,6 +3,11 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from django.conf import settings
 from .forms import ContactForm
+from django.http import HttpResponse
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
 
 logger = logging.getLogger(__name__)
 
@@ -87,3 +92,12 @@ def projectone_view(request):
 
 def projecttwo_view(request):
     return render(request, "home/projecttwo.html")
+
+
+def send_test_email(request):
+    subject = 'Test Email'
+    message = 'This is a test email sent from Django.'
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = [settings.EMAIL_HOST_USER, ]  # Replace with your email or test recipient
+    send_mail(subject, message, email_from, recipient_list)
+    return HttpResponse("Test email sent.")
