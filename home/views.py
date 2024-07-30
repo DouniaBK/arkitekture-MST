@@ -26,7 +26,7 @@ def contact_view(request):
                     f"Contact Form Submission from {name}",
                     message,
                     email,
-                    [settings.CONTACT_EMAIL],
+                    [settings.EMAIL_HOST_USER],
                     fail_silently=False,
                 )
                 return redirect("contact_success")

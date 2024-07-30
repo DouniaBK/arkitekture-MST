@@ -30,8 +30,10 @@ SECRET_KEY = 'django-insecure-e+di)yu))enu_w4nj)d#!0v11t2d*@^fhs&2m+7kmdbvp&_ms5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-douniabk-arkitekturemst-s1lqtzf9vd1.ws-eu114.gitpod.io']
-
+ALLOWED_HOSTS = ['8000-douniabk-arkitekturemst-s1lqtzf9vd1.ws-eu114.gitpod.io', '8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io'
+]
 
 # Application definition
 
@@ -133,13 +135,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Initialize environment variables
-EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
-EMAIL_HOST = config('EMAIL_HOST')
-EMAIL_PORT = config('EMAIL_PORT', cast=int)
-EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-ADMINS = config('ADMINS', cast=Csv())
+
+env = environ.Env()
+environ.Env.read_env() 
+
+if DEBUG:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+else:
+    EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
+    EMAIL_HOST = config('EMAIL_HOST')
+    EMAIL_PORT = config('EMAIL_PORT', cast=int)
+    EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+    EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+    ADMINS = config('ADMINS', cast=Csv())
 
 # Logging configuration
 LOGGING = {

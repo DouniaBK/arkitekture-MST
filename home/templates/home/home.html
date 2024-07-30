@@ -1,121 +1,191 @@
-{% extends 'home/base.html' %}
-{% load static %}
-{% block title %}Home - Starke-Thomsen{% endblock %}
-
-{% block content %}
+{% extends 'home/base.html' %} {% load static %} {% block title %}Home -
+Starke-Thomsen{% endblock %} {% block content %}
 
 <!-- Introduction section -->
 <div class="container m-7">
-    <div class="row">
-        <div class="col-lg-6">
-            <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen</h1>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="text-center mb-4">
-                <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <img src="{% static 'home/images/intro-image.jpg' %}" class="img-fluid" id="intro-image"  alt="Architect House Image">
-        </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen</h1>
+      <p class="text-justify">
+        Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau,
+        Energieberatung und Denkmalpflege aus Schwabmünchen.
+      </p>
+      <div class="text-center mb-4">
+        <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
+          >Contact Us</a
+        >
+      </div>
     </div>
+    <div class="col-lg-6">
+      <img
+        src="{% static 'home/images/intro-image.jpg' %}"
+        class="img-fluid"
+        id="intro-image"
+        alt="Architect House Image"
+      />
+    </div>
+  </div>
 </div>
 
 <!-- Services section -->
 <div class="container m-7">
-    <!-- Services section -->
-    <div class="content-section">
-        <h2 class="m-5 text-start">Our Services</h2>
-        <div class="service-container">
-            <div class="service">
-                <h3>Energieberatung</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="service">
-                <h3>Sanierung</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="service">
-                <h3>Planung</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="service">
-                <h3>Denkmalpflege</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="service">
-                <h3>Umbau</h3>
-                <p>Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-        </div>
+  <!-- Services section -->
+  <div class="content-section">
+    <h2 class="m-5 text-start">Our Services</h2>
+    <div class="service-container">
+      <div class="service">
+        <h3>Energieberatung</h3>
+        <p>
+          Als staatlich anerkannte Energieeffizienzexpertin berate ich Sie zur
+          energetischen Sanierung und staatlichen Fördermöglichkeiten.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Sanierung</h3>
+        <p>
+          Zur Sanierung Ihres Bestandsgebäudes berate ich Sie sehr gerne,
+          insbesondere im Kontext der energetischen Sanierung.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Planung</h3>
+        <p>
+          Gerne berate und plane ich für Sie bei Neu- oder Umbau, Sanierung oder
+          Nutzungsänderung!
+        </p>
+      </div>
+      <div class="service">
+        <h3>Denkmalpflege</h3>
+        <p>
+          Sie möchten ein bestehendes Denkmal modern nutzen? Ich berate Sie
+          hierzu sehr gerne.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Umbau</h3>
+        <p>
+          Sie möchten umbauen? Ich berate Sie sehr gerne und erstelle notwendige
+          Baupläne und Bauanträge!
+        </p>
+      </div>
+      <div class="service">
+        <h3>Baubegleitung</h3>
+        <p>
+          Sie wünschen eine Baubegleitung? Kontaktieren Sie mich hierzu gerne!
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- About section -->
 
 <div class="container m-7">
-    <div class="content-section">
-        <h2 class="m-5">Über Mich</h2>
+  <div class="content-section">
+    <h2 class="m-5">Über Mich</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <img
+        src="{% static 'home/images/aboutme-imageV3-logo-resized.jpg' %}"
+        class="img-fluid"
+        id="aboutme-image"
+        alt="Architect House Image"
+      />
     </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <img src="{% static 'home/images/aboutme-imageV3-logo-resized.jpg' %}" class="img-fluid" id="aboutme-image" alt="Architect House Image">
-        </div>
-        <div class="col-lg-6">
-            <div class="aboutme">
-                <h3 class="d-flex">Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</h3>
-                <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-            </div>
-            <div class="text-center mb-4">
-            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
-            </div>
-        </div>
-
+    <div class="col-lg-6">
+      <div class="aboutme">
+        <h3 class="d-flex">
+          Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin
+        </h3>
+        <p class="text-justify">
+          seit über 10 Jahren bin ich in der Architektur und Denkmalpflege
+          tätig. Ich plane Neubauten, Umbauten und Sanierungen, reiche
+          erforderliche Pläne und Baugenehmigungen ein und bin
+          Energieeffizienzexpertin. Ich erstelle für Sie den individuellen
+          Sanierungsfahrplan (iSFP) und stelle Förderanträge bei KfW und BAFA.
+          Ich freue mich auf Ihre Anfrage (telefonisch oder per Email)!
+        </p>
+      </div>
+      <div class="text-center p-4 mb-4">
+        <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
+          >Contact Us</a
+        >
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- Portfolio section -->
 <div class="container-fluid m-7" id="portfolio">
-    <div class="container p-2">
+  <div class="container p-2">
     <div class="content-section">
-        <h2 class="mt-5">Portfolio</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="project">
-                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
-                    <h3 class="mt-5">Bestandswand Entfernung</h3>
-                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                </div>
-                <div class="text-center m-4">
-                <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf">View Project</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="project">
-                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
-                    <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
-                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                </div>
-                <div class="text-center m-4">
-            
-                <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf">View Project</a>
-                </div>
-            </div>
+      <h2 class="mt-5">Portfolio</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="project">
+            <img
+              src="{% static 'home/images/project1-v2.png' %}"
+              class="img-fluid"
+              alt="Project 1"
+              id="aboutme-image"
+            />
+            <h3 class="mt-5">Bestandswand Entfernung</h3>
+            <p class="text-justify">
+              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+              tempor incididunt ut labore.
+            </p>
+          </div>
+          <div class="text-center m-4">
+            <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf"
+              >View Project</a
+            >
+          </div>
         </div>
-    </div></div>
+        <div class="col-lg-6">
+          <div class="project">
+            <img
+              src="{% static 'home/images/project1-v2.png' %}"
+              class="img-fluid"
+              id="aboutme-image"
+              alt="Project 2"
+            />
+            <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
+            <p class="text-justify">
+              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
+              tempor incididunt ut labore.
+            </p>
+          </div>
+          <div class="text-center m-4">
+            <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Contact information section -->
 <div class="container m-7">
-    <div class="content-section">
-        <h2 class="m-5">So erreichen Sie uns</h2>
-        <hr class="footer-divider">
-        <div class="contact-info">
-            <p><i class="fas fa-envelope p-2"></i><a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a></p>
-            <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
-        </div>
-        <div class="text-center m-4">
-            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Contact Us</a>
-        </div>
+  <div class="content-section">
+    <h2 class="m-5">So erreichen Sie uns</h2>
+    <hr class="footer-divider" />
+    <div class="contact-info">
+      <p>
+        <i class="fas fa-envelope p-2"></i
+        ><a href="mailto:info@architektur-starke-thomsen.de"
+          >info@architektur-starke-thomsen.de</a
+        >
+      </p>
+      <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
     </div>
+    <div class="text-center m-4">
+      <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
+        >Contact Us</a
+      >
+    </div>
+  </div>
 </div>
 {% endblock %}

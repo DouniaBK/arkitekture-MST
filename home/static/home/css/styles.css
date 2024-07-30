@@ -161,7 +161,7 @@ div.project img, div.service img {
 /* Services-section Design */
 .content-section {
     text-align: center;
-    padding: 0 20px; /* Add padding to the sides for responsiveness */
+    padding: 0; /* Add padding to the sides for responsiveness */
 }
 
 .service-container {
@@ -175,7 +175,7 @@ div.project img, div.service img {
     position: relative;
     width: calc(33.33% - 40px); /* Adjust this width for responsiveness */
     max-width: 400px; /* Maximum width */
-    height: 140px; /* H */
+    height: 150px; /* H */
     overflow: hidden; /* Hide any content that may overflow the shape */
     margin-bottom: 30px; /* Add margin between services */
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
@@ -248,7 +248,8 @@ a#btn-green-leaf.btn {
     background-color: rgba(55, 128, 107, 1); /* First and fifth service */
 }
 
-.service:nth-child(2)::before {
+.service:nth-child(2)::before,
+.service:nth-child(6)::before {
     content: '';
     position: absolute;
     top: 0;
@@ -259,6 +260,7 @@ a#btn-green-leaf.btn {
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(202, 168, 146, 1); /* Second service */
 }
+
 
 /* Apply 3D shadow effect to the pseudo-elements of services 3 and 4 */
 .service:nth-child(3)::before,
@@ -282,6 +284,7 @@ a#btn-green-leaf.btn {
 .service:nth-child(1),
 .service:nth-child(2),
 .service:nth-child(5),
+.service:nth-child(6)::before,
 .service:nth-child(2)::before {
     color: #fff;
 }
@@ -289,12 +292,15 @@ a#btn-green-leaf.btn {
 /* Set font color to white for services with green background */
 .service:nth-child(1),
 .service:nth-child(5),
+.service:nth-child(6),
 .service:nth-child(2)::before,
 .service:nth-child(1) h3,
 .service:nth-child(5) h3,
-.service:nth-child(2) h3 {
+.service:nth-child(2) h3,
+.service:nth-child(6) h3 {
     color: #fff;
 }
+
 
 .service h3,
 .service p {
