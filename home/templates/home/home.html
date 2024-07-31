@@ -10,9 +10,15 @@ Starke-Thomsen{% endblock %} {% block content %}
         Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau,
         Energieberatung und Denkmalpflege aus Schwabmünchen.
       </p>
+      <p class="text-justify">
+        Mit über zehnjähriger Erfahrung decke ich alle Bereiche des
+        architektonischen Leistungsspektrums ab – individuell, gewissenhaft und
+        zuverlässig. Damit auch Ihr Projekt den Weg vom Gedanken zur
+        Realisierung schafft: Ich begleite Sie in jeder Phase Ihres Vorhabens.
+      </p>
       <div class="text-center mb-4">
         <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
-          >Contact Us</a
+          >Kontakt</a
         >
       </div>
     </div>
@@ -31,90 +37,58 @@ Starke-Thomsen{% endblock %} {% block content %}
 <div class="container m-7">
   <!-- Services section -->
   <div class="content-section">
-    <h2 class="m-5 text-start">Our Services</h2>
+    <h2 class="m-5 text-start">Dienstleistungen</h2>
     <div class="home-service-container">
       <div class="home-service">
-        <h3 >Energieberatung</h3>
-        <p >
+        <h3>Energieberatung</h3>
+        <p>
           Als staatlich anerkannte Energieeffizienzexpertin berate ich Sie zur
           energetischen Sanierung und staatlichen Fördermöglichkeiten.
         </p>
       </div>
       <div class="home-service">
-        <h3 >Sanierung</h3>
-        <p >
+        <h3>Sanierung</h3>
+        <p>
           Zur Sanierung Ihres Bestandsgebäudes berate ich Sie sehr gerne,
           insbesondere im Kontext der energetischen Sanierung.
         </p>
       </div>
       <div class="home-service">
-        <h3 >Planung</h3>
-        <p >
+        <h3>Planung</h3>
+        <p>
           Gerne berate und plane ich für Sie bei Neu- oder Umbau, Sanierung oder
           Nutzungsänderung!
         </p>
       </div>
       <div class="home-service">
-        <h3 >Denkmalpflege</h3>
-        <p >
+        <h3>Denkmalpflege</h3>
+        <p>
           Sie möchten ein bestehendes Denkmal modern nutzen? Ich berate Sie
           hierzu sehr gerne.
         </p>
       </div>
       <div class="home-service">
         <h3>Umbau</h3>
-        <p >
+        <p>
           Sie möchten umbauen? Ich berate Sie sehr gerne und erstelle notwendige
           Baupläne und Bauanträge!
         </p>
       </div>
       <div class="home-service">
-        <h3 >Baubegleitung</h3>
+        <h3>Baubegleitung</h3>
         <p>
           Sie wünschen eine Baubegleitung? Kontaktieren Sie mich hierzu gerne!
         </p>
       </div>
     </div>
-  </div>
-</div>
-
-<!-- About section -->
-
-<div class="container m-7">
-  <div class="content-section">
-    <h2 class="m-5">Über Mich</h2>
-  </div>
-  <div class="row">
-    <div class="col-lg-6">
-      <img
-        src="{% static 'home/images/aboutme-imageV3-logo-resized.jpg' %}"
-        class="img-fluid"
-        id="aboutme-image"
-        alt="Architect House Image"
-      />
-    </div>
-    <div class="col-lg-6">
-      <div class="aboutme pt-2">
-        <h3 class="d-flex pb-2">
-          Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin
-        </h3>
-        <p class="text-justify">
-          seit über 10 Jahren bin ich in der Architektur und Denkmalpflege
-          tätig. Ich plane Neubauten, Umbauten und Sanierungen, reiche
-          erforderliche Pläne und Baugenehmigungen ein und bin
-          Energieeffizienzexpertin. Ich erstelle für Sie den individuellen
-          Sanierungsfahrplan (iSFP) und stelle Förderanträge bei KfW und BAFA.
-          Ich freue mich auf Ihre Anfrage (telefonisch oder per Email)!
-        </p>
-      </div>
-      <div class="text-center p-4 mb-4">
-        <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
-          >Contact Us</a
-        >
-      </div>
+    <div class="text-center m-4">
+      <a href="{% url 'services' %}" class="btn" id="btn-green-leaf"
+        >Zu Dienstleistungen</a
+      >
     </div>
   </div>
 </div>
+
 
 <!-- Portfolio section -->
 <div class="container-fluid m-7" id="portfolio">
@@ -132,13 +106,13 @@ Starke-Thomsen{% endblock %} {% block content %}
             />
             <h3 class="mt-5">Bestandswand Entfernung</h3>
             <p class="text-justify">
-              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-              tempor incididunt ut labore.
+              Dachsanierung und Wohnraumschaffung in einem Reihenmittelhaus aus
+              dem Jahr 1972.
             </p>
           </div>
           <div class="text-center m-4">
             <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf"
-              >View Project</a
+              >Projekt</a
             >
           </div>
         </div>
@@ -152,13 +126,13 @@ Starke-Thomsen{% endblock %} {% block content %}
             />
             <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
             <p class="text-justify">
-              Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod
-              tempor incididunt ut labore.
+              Dieses Einfamilienhaus soll umgestalltet und an die Wünsche des
+              neuen Eigentümers angepasst werden.
             </p>
           </div>
           <div class="text-center m-4">
             <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf"
-              >View Project</a
+              >Projekt</a
             >
           </div>
         </div>
@@ -166,6 +140,45 @@ Starke-Thomsen{% endblock %} {% block content %}
     </div>
   </div>
 </div>
+
+
+<!-- About section -->
+
+<div class="container m-7">
+  <div class="content-section">
+    <h2 class="m-5">Über Mich</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <img
+        src="{% static 'home/images/aboutme-imageV3-logo-resized.jpg' %}"
+        class="img-fluid"
+        id="aboutme-image"
+        alt="Architect House Image"
+      />
+    </div>
+    <div class="col-lg-6">
+      <div class="aboutme">
+        <h3 class="d-flex justify-content-center">
+          Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin
+        </h3>
+        <p class="text-justify">
+          seit über 10 Jahren bin ich in der Architektur und Denkmalpflege
+          tätig. Zu meinem Profil gehören neben der Planung von Neubau-, Umbau-,
+          und Sanierungsarbeiten und dem Einreichen der erforderlichen Pläne und
+          Baugenehmigungen auch die Tätigkeit als Energieeffizienzexpertin.
+        </p>
+        <p class="text-justify">
+          Hierdurch kann ich für Sie den sogenannten iSFP, den individuellen
+          Sanierungsfahrplan, der die Grundlage für die Förderung durch KfW und
+          BAFA (Bundesamt für Wirtschaft und Ausfuhrkontrolle) ist, kompetent
+          erarbeiten und entsprechende Förderanträge stellen.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Contact information section -->
 <div class="container m-7">
@@ -182,9 +195,7 @@ Starke-Thomsen{% endblock %} {% block content %}
       <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
     </div>
     <div class="text-center m-4">
-      <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
-        >Contact Us</a
-      >
+      <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Kontakt</a>
     </div>
   </div>
 </div>
