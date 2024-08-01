@@ -6,50 +6,60 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="project-title text-center mb-5">Reihenmittelhaus Dachsanierung</h2>
+                <h2 class="project-title text-center mb-5">Umplanung Einfamilienhaus</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 1" class="project-image img-fluid">
-                <p class="project-description">Bei einem Reihenmittelhaus aus dem Jahre 1972 stand die Dachsanierung an.</p>
+                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 1" class="project-page-image img-fluid">
+                <p class="project-description">Dieses Einfamilienhaus soll umgestalltet und an die Wünsche des neuen Eigentümers angepasst werden.</p>
             </div>
             <div class="col-md-6">
-                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 2" class="project-image img-fluid">
-                <p class="project-description">Die Gelegenheit wurde genutzt, um nicht nur mehr Wohnraum im Dachgeschoss zu generieren, sondern auch die energische Sanierung durchzuführen.</p>
+                <img src="{% static 'home/images/projects/umplanung-project-img2.jpg' %}" alt="Image 2" class="project-page-image img-fluid">
+                <p class="project-description">Der Bauherr wünscht die Entfernung einer Bestandswand und das Zumauern der Gaderobe, damit das Erdgeschoss gemütlicher wird.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 3" class="project-image img-fluid">
-                <p class="project-description">Mit zwei großzügigen Gauben konnte die Wohnfläche um ca. 40qm erhöht werden.</p>
+                <img src="{% static 'home/images/projects/umplanung-project-img3.jpg %}" alt="Image 3" class="project-page-image img-fluid">
+                <p class="project-description">Hier noch im Bestand der alte Küchendruchgang. Dunkel, drückend und unpassend für moderne Wohnansprüche.</p>
             </div>
             <div class="col-md-6">
-                <img src="{% static 'home/images/project1-v2.png' %}" alt="Image 4" class="project-image img-fluid">
-                <p class="project-description">Um eine Wärmebrücke zum nun mit Wohnfläche überspanntem Balkon im ersten Geschoss zu verhindern, wurde nach Fachberechnung eine ca. 20cm starke Aufputzdämmung erstellt.</p>
+                <img src="{% static 'home/images/projects/umplanung-project-img4.jpg' %}" alt="Image 3" class="project-page-image img-fluid">
+                <p class="project-description">Die Firma MERCICON übernimmt die Bauarbeiten.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/projects/umplanung-project-img5.jpg' %}" alt="Image 4" class="project-page-image img-fluid">
+                <p class="project-description">Nach dem Entfernen der Wand wirk - trotz Rohbau -das EG schon viel heller, geräumiger und wohnlicher.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="project-description">Der Innenraum wurde entsprechend der Bauherrenwünsche gestaltet. Ein weiteres Badezimmer wurde geschaffen.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="project-description">Die Bauherren: sehr zufrieden.</p>
+                <img src="{% static 'home/images/projects/umplanung-project-img6.jpg' %}" alt="Image 4" class="project-page-image img-fluid">
+                <p class="project-description">Und letztlich wird auch schon die Gaderobe zugemauert - ein größeres Gäste-WC soll entstehen.</p>
             </div>
         </div>
 
-        <!-- Testimonial Section -->
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <h3 class="testimonial-title">Kundenstimme</h3>
-                <div class="testimonial">
-                    <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
-                    <p class="testimonial-author">- Max Mustermann</p>
-                </div>
-            </div>
+            <!-- Contact information section -->
+    <div class="container m-7">
+        <div class="content-section">
+          <h2 class="m-5">So erreichen Sie uns</h2>
+          <hr class="footer-divider" />
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-envelope p-2"></i>
+              <a href="mailto:info@architektur-starke-thomsen.de"
+                >info@architektur-starke-thomsen.de</a
+              >
+            </p>
+            <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
+          </div>
+          <div class="text-center m-4">
+            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf"
+              >Kontakt</a
+            >
+          </div>
         </div>
-    </div>
+      </div>
 </section>
 {% endblock %}

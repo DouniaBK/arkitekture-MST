@@ -114,7 +114,12 @@ nav ul li a {
 
 #portfolio {
     background-color: rgba(248, 248, 248, 1);
-} 
+}
+
+#boder-radius {
+    border: solid 1px #dbb138;
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
 
 h3 {
     color: #333;
@@ -149,12 +154,31 @@ div.project a, div.home-service a {
     display: inline-block;
     margin-top: 10px;
 }
-/*
-div.project img, div.home-service img {
+
+/*Project pages */
+div.project-page-image {
+    position: relative;
     width: 100%;
-    height: auto;
-    border-radius: 5px;  Make the images have the same rounded corners as the containers 
-}*/
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .project-page-image {
+        margin-bottom: 15px;
+    }
+
+    .project-description {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-description {
+        font-size: 0.8em;
+    }
+}
 
 /* Shared image styles for portfolio, about me, and introduction sections */
 .project-image,
@@ -164,6 +188,7 @@ div.project img, div.home-service img {
     width: 100%;
     padding-top: 75%; /* 4:3 aspect ratio */
     overflow: hidden;
+
 }
 
 .project-image img,
@@ -225,13 +250,71 @@ div.project img, div.home-service img {
     }
 }
 
-/* Contact */
+/* Contact
 .contact-info {
     margin-top: 40px;
 }
 
 .contact-info p {
     margin-bottom: 10px;
+} */
+
+/* Contact Information Section */
+.content-section {
+    text-align: center;
+    padding: 0 15px; /* Add padding to the sides for responsiveness */
+}
+
+.contact-info p {
+    font-size: 1.1em; /* Adjust font size */
+    line-height: 1.5; /* Add line-height for better readability */
+    margin: 10px 0; /* Add margin between contact details */
+}
+
+.contact-info i {
+    color: #375c4d; /* Icon color */
+}
+
+.contact-info a {
+    color: #375c4d; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-divider {
+    margin: 20px auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .footer-divider {
+        width: 75%; /* Adjust divider width for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info p {
+        font-size: 0.9em; /* Adjust font size for very small screens */
+    }
+
+    .footer-divider {
+        width: 90%; /* Adjust divider width for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust font size for very small screens */
+    }
 }
 
 /* services.html Styles */

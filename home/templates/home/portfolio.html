@@ -4,36 +4,57 @@
 
 {% block content %}
 
-
 <!-- Portfolio section -->
-<div class="container-fluid m-7">
+<div class="container-fluid p-2">
     <div class="container p-2">
-    <div class="content-section">
-        <h2 class="">Portfolio</h2>
+      <div class="content-section">
+        <h2 class="mt-5">Portfolio</h2>
         <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="project">
-                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" alt="Project 1" id="aboutme-image">
-                    <h3 class="mt-5">Bestandswand Entfernung</h3>
-                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                </div>
-                <div class="text-center m-4">
-                <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf">View Project</a>
-                </div>
+          <div class="col-lg-6">
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="{% static 'home/images/project1-v2.png' %}"
+                  class="img-fluid"
+                  alt="Project 1"
+                />
+              </div>
+              <h3 class="mt-5">Umplanung Einfamilienhaus</h3>
+              <p class="text-justify">
+                Dachsanierung und Wohnraumschaffung in einem Reihenmittelhaus aus
+                dem Jahr 1972.
+              </p>
             </div>
-            <div class="col-lg-6">
-                <div class="project">
-                    <img src="{% static 'home/images/project1-v2.png' %}" class="img-fluid" id="aboutme-image" alt="Project 2">
-                    <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
-                    <p class="text-justify">Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.</p>
-                </div>
-                <div class="text-center m-4">
-            
-                <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf">View Project</a>
-                </div>
+            <div class="text-center m-4">
+              <a href="{% url 'projectone' %}" class="btn" id="btn-green-leaf"
+                >Projekt</a
+              >
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="{% static 'home/images/ansicht-dachsanierung.jpg' %}"
+                  class="img-fluid"
+                  alt="Project 2"
+                />
+              </div>
+              <h3 class="mt-5">Reihenmittelhaus Dachsanierung</h3>
+              <p class="text-justify">
+                Dieses Einfamilienhaus soll umgestalltet und an die Wünsche des
+                neuen Eigentümers angepasst werden.
+              </p>
+            </div>
+            <div class="text-center m-4">
+              <a href="{% url 'projecttwo' %}" class="btn" id="btn-green-leaf"
+                >Projekt</a
+              >
+            </div>
+          </div>
         </div>
-    </div></div>
-</div>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}
