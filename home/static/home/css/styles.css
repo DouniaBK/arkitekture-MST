@@ -108,7 +108,14 @@ nav ul li a {
     margin-right: 1rem;
 }
 
-/* projects & services */
+/* projects, about me & services */
+
+/*portfolio section on the home page */
+
+#portfolio {
+    background-color: rgba(248, 248, 248, 1);
+} 
+
 h3 {
     color: #333;
     margin-top: 20px;
@@ -130,26 +137,95 @@ div.project {
 }
 
 
-div.project h3, div.service h3 {
+div.project h3, div.home-service h3 {
     margin-bottom: 10px;
 }
 
-div.project p, div.service p {
+div.project p, div.home-service p {
     margin-bottom: 10px;
 }
 
-div.project a, div.service a {
+div.project a, div.home-service a {
     display: inline-block;
     margin-top: 10px;
 }
-
-div.project img, div.service img {
+/*
+div.project img, div.home-service img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Make the images have the same rounded corners as the containers */
+    border-radius: 5px;  Make the images have the same rounded corners as the containers 
+}*/
+
+/* Shared image styles for portfolio, about me, and introduction sections */
+.project-image,
+.aboutme-image,
+.intro-image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
 }
 
+.project-image img,
+.aboutme-image img,
+.intro-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
 
+/* Responsive adjustments for the project, about me, and introduction sections */
+@media (max-width: 768px) {
+    .project, .aboutme, .intro-image {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .project h3, .aboutme h3, .intro-image h3 {
+        font-size: 1.3em;
+        margin-top: revert;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project h3, .aboutme h3, .intro-image h3 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin: 1em;
+        margin-bottom: 5px;
+    }
+
+    main h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em;
+    }
+}
+
+/* Contact */
 .contact-info {
     margin-top: 40px;
 }
@@ -236,29 +312,62 @@ div.project img, div.service img {
         margin: 0 0 15px 0; /* Adjust margins */
     }
 }
-/*Introduction section */
+/*Introduction section 
 
 #intro-image {
-    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left 
 }
 
-/*about me section*/
+*/
+
+/*about me section
 #aboutme-image {
     border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
-}
+
 
 /* buttons */
 
 #btn-green-leaf {
+    display: inline-block;
     color: #fff;
-    background-color: rgba(55, 128, 107, 1); /* First and fifth service */
+    background-color: rgba(55, 128, 107, 1); /* Green leaf color */
     border-radius: 20px 5px 20px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size as needed */
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensure the text doesn't wrap */
 }
 
 a#btn-green-leaf.btn {
     color: #fff!important;
 }
 
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+    #btn-green-leaf {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #btn-green-leaf {
+        font-size: 0.8rem; /* Further adjust font size for very small screens */
+        padding: 6px 12px; /* Further adjust padding for very small screens */
+    }
+}
+
+/* Ensure the button text is white */
+a#btn-green-leaf{
+    color: #fff!important;
+}
+
+/* Button hover effect */
+#btn-green-leaf:hover {
+    background-color: rgba(45, 118, 97, 1); /* Darker green on hover */
+}
 
 /* Custome Margin */
 
@@ -281,24 +390,25 @@ a#btn-green-leaf.btn {
 
 .home-service {
     position: relative;
-    width: calc(33.33% - 40px); /* Adjust this width for responsiveness */
-    max-width: 400px; /* Maximum width */
-    height: 150px; /* H */
+    width: calc(33.33% - 20px); /* Adjust this width for responsiveness */
+    max-width: 350px; /* Maximum width */
+    height: auto; /* Auto height to accommodate text */
     overflow: hidden; /* Hide any content that may overflow the shape */
     margin-bottom: 30px; /* Add margin between services */
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
-}
-
-div.home-service {
-    padding: 5px;
-    margin-bottom: 40px;
-    font-size: 0.9em; /* Smaller text for the services section */
-    max-width: 600px; /* Ensures the text fits well inside the div */
+    padding: 15px; /* Add padding inside the service boxes */
+    box-sizing: border-box; /* Ensure padding is included in the total width/height */
 }
 
 div.home-service h3 {
-    margin-bottom: 5px;
-    font-size: 1.6em; /* Smaller font size for h3 elements within services */
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Adjust font size for h3 elements within services */
+    font-weight: bold; /* Ensure the font weight is bold */
+}
+
+div.home-service p {
+    font-size: 1em; /* Adjust font size for paragraphs */
+    line-height: 1.5; /* Add line-height for better readability */
 }
 
 /* Service background colors */
@@ -308,11 +418,12 @@ div.home-service h3 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 165px;
-    width: 425px;
+    height: 100%;
+    width: 100%;
     border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(55, 128, 107, 1); /* First and fifth service */
+    z-index: -1;
 }
 
 .home-service:nth-child(2)::before,
@@ -321,11 +432,12 @@ div.home-service h3 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 165px;
-    width: 425px;
+    height: 100%;
+    width: 100%;
     border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
     background-color: rgba(202, 168, 146, 1); /* Second and sixth service */
+    z-index: -1;
 }
 
 /* Apply 3D shadow effect to the pseudo-elements of services 3 and 4 */
@@ -335,16 +447,17 @@ div.home-service h3 {
     position: absolute;
     top: 0;
     left: 0;
-    height: 165px;
-    width: 425px;
+    height: 100%;
+    width: 100%;
     border-color: #b18b61;
     border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    z-index: -1;
 }
 
 /* Apply 3D shadow effect to the services 3 and 4 */
 .home-service:nth-child(3),
 .home-service:nth-child(4) {
-    box-shadow: 0 0 10px rgb(0 0 0 / 17%);/* 3D shadow effect */
+    box-shadow: 0 0 10px rgb(0 0 0 / 17%); /* 3D shadow effect */
 }
 
 /* Set font color to white for services with specific backgrounds */
@@ -375,86 +488,23 @@ div.home-service h3 {
     padding: 5px; /* Add padding inside the shape */
 }
 
-/*portfolio section */
-
-#portfolio {
-    background-color: rgba(248, 248, 248, 1);
-}
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .home-service {
-        width: calc(50% - 40px); /* Two services per row on smaller screens */
+        width: calc(50% - 20px); /* Two services per row on smaller screens */
     }
 }
 
 @media screen and (max-width: 480px) {
-    .home-service{
-        width: calc(100% - 40px); /* Single service per row on even smaller screens */
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-    
-    .project, .home-service {
-        margin-bottom: 15px;
-        max-width: 100%; /* Ensure containers fit the screen on smaller devices */
+    .home-service {
+        width: calc(100% - 20px); /* Single service per row on even smaller screens */
     }
 
-    div.home-service {
-        font-size: 0.8em; /* Smaller text for the services section on smaller screens */
+    div.home-service h3 {
+        font-size: 1.2em; /* Adjust font size for h3 elements within services */
     }
 
-    div.home-service h3, div.project h3, div.aboutme h3 {
-        font-size: 1.3em; /* Smaller font size for h3 elements within services on smaller screens */
-        margin-top: revert;
+    div.home-service p {
+        font-size: 0.9em; /* Adjust font size for paragraphs */
     }
-
-    h2 {
-        font-size: 1.2em; /* Smaller font size for h3 elements within services on smaller screens */
-        margin: 1em;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    h2 {
-        margin-bottom: 5px;
-    }
-
-    h1 {
-        margin-bottom: 5px;
-        font-size: 1.8em; /* Smaller font size for h3 elements within services on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    div.home-service {
-        font-size: 0.7em; /* Even smaller text for the services section on very small screens */
-    }
-
-
-    div.home-serviceh3 {
-        font-size: 1.2em; /* Even smaller font size for h3 elements within services on very small screens */
-    }
-
-    div.project h3 {
-        font-size: 1.2em; /* Even smaller font size for h3 elements within services on very small screens */
-    }
-
-    h2 {
-        font-size: 1em; /* Smaller font size for h3 elements within services on smaller screens */
-        margin: 1em;
-        margin-bottom: 5px;
-    }
-
-    main h1 {
-        margin-bottom: 5px;
-        font-size: 1.8em; /* Smaller font size for h3 elements within services on smaller screens */
-    }
-
 }
