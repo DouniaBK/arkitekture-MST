@@ -1,42 +1,39 @@
-{% load static %}<!-- footer.html -->
+{% load static %}
+<!-- footer.html -->
 <footer class="footer">
     <div class="container">
         <!-- First Section: Logo and Header -->
-        <div class="row">
-            <div class="col-md-4 align-self-center">
-                <img src="{% static 'home/images/logo-Architekturbüro-Starke-Thomsen-v2.png' %}" alt="Logo" class="footer-logo img-fluid">
-            </div>
-            <div class="col-md-8 align-self-center">
+        <div class="row text-center">
+            <div class="col-md-12">
                 <h1 class="footer-heading">Architekturbüro Starke-Thomsen</h1>
                 <p>Dipl.-Ing. (FH) Michaela Starke-Thomsen M.A., Energieeffizienzexpertin</p>
             </div>
         </div>
         <hr class="footer-divider">
         <!-- Second Section: Contact, Address, and Opening Hours -->
-        <div class="row mb-4">
+        <div class="row mb-4 text-center">
             <div class="col-md-4">
-                <h5 class="footer-heading">Contact</h5>
-                <p><i class="fas fa-phone p-2"></i> Phone: +1234567890</p>
-                <p><i class="fas fa-envelope p-2"></i> Email: info@example.com</p>
+                <h5 class="footer-subheading m-3">Kontakt</h5>
+                <p><i class="fas fa-phone p-2"></i> Telefon: 08232 / 5054030</p>
+                <p><i class="fas fa-envelope p-2"></i> Email: info@architektur-starke-thomsen.de</p>
             </div>
             <div class="col-md-4">
-                <h5 class="footer-heading">Address</h5>
+                <h5 class="footer-subheading m-3">Adresse</h5>
                 <p>Kipfbuelstr. 34,</p>
-                <p>86830 Schwabmunchen</p>
+                <p>86830 Schwabmünchen</p>
             </div>
             <div class="col-md-4">
-                <h5 class="footer-heading">Opening Hours</h5>
-                <p>Monday - Friday: 8:30am - 14:30pm</p>
-                <p>Saturday: nur nach Vereinbarung</p>
-                <p>Sunday: nur nach Vereinbarung</p>
+                <h5 class="footer-subheading m-3">Geschäftszeiten</h5>
+                <p>Montag - Freitag: 8:30am - 14:30pm</p>
+                <p>Sa./So.: nur nach Vereinbarung</p>
             </div>
         </div>
         <hr class="footer-divider">
         <!-- Third Section: Partners Links -->
-        <div class="row">
-            <div class="col-md-12 ">
-                <h5 class="footer-heading">Partners</h5>
-                <ul class="list-unstyled d-flex justify-content-start">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h5 class="footer-subheading">Partnern und weiteren Informationen</h5>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center">
                     <li class="m-3">
                         <a href="https://www.kfw.de/inlandsfoerderung/Unternehmen/Energie-und-Umwelt/?kfwmc=kom.sea.google.kfwcorporate.run-of-site.sitelink|energieeffizienz&wt_cc1=brand&wt_cc2=coi&gad_source=1&gclid=CjwKCAiA_aGuBhACEiwAly57Med4vZRbGybrTMm6SFuw0DL3C3IsBTjf1mrOQ76xHJLVJExlUQ4nvhoCcM4QAvD_BwE" target="_blank">Kreditanstalt für Wiederaufbau (KfW)</a>
                     </li>
@@ -62,12 +59,7 @@
                     </li>
                     <li class="mr-3">
                         <a href="https://www.facebook.com/profile.php?id=61559596775225" target="_blank">
-                            <i class="fab fa-facebook gray-icon p-2"></i>
-                        </a>
-                    </li>
-                    <li class="mr-3">
-                        <a href="{% url 'contact' %}">
-                            <i class="fas fa-phone gray-icon p-2"></i>
+                            <i class="fab fa-facebook gray-icon p-2 "></i>
                         </a>
                     </li>
                     <li>
@@ -84,9 +76,9 @@
         <!-- Fourth Section: Legal Links and Copyright -->
         <div class="row">
             <div class="col-md-12 text-center">
-                <ul class="list-unstyled d-flex justify-content-center mb-0">
-                    <li class="mr-3"><a href="{% url 'impressum' %}">Terms of Use</a></li>
-                    <li class="mr-3"><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+                    <li class="mr-3"><a href="{% url 'impressum' %}">Impressum</a></li>
+                    <li class="mr-3"><a href="{% url 'privacy' %}">Datenschutz</a></li>
                     <li class="mr-3"><a href="{% url 'disclaimer' %}">Disclaimer</a></li>
                     <li class="mr-3">© Copyright 2024. Alle Rechte vorbehalten.</li>
                 </ul>
