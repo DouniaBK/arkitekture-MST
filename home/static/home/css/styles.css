@@ -727,3 +727,90 @@ div.home-service p {
         font-size: 1em; /* Adjust font size for paragraphs */
     }
 }
+
+/* Contact form*/
+
+.contact-title {
+    font-size: 2rem;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.4rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
