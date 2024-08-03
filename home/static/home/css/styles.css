@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-    background: #ffffff;
+    background: #f8f8f8;
     color: #0c0c0c;
     padding: 10px 0;
 }
@@ -269,6 +269,11 @@ div.project-page-image {
 
     .project-description {
         font-size: 1em;
+    }
+
+    h2.project-title{
+        font-size: 28px;
+        text-align: center;
     }
 }
 
