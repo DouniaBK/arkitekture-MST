@@ -1,0 +1,821 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header, .content-wrapper, .footer {
+    flex-shrink: 0;
+}
+
+.header {
+    background: #f8f8f8;
+    color: #0c0c0c;
+    padding: 10px 0;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.navbar-logo {
+    max-width: 80px; /* Adjust the max-width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-wrapper {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-wrapper h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-wrapper p {
+    margin-bottom: 20px;
+}
+
+/* Sticky navbar */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .navbar-logo {
+        max-width: 70px; /* Smaller logo on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 16px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .navbar-logo {
+        max-width: 60px; /* Smaller logo on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-logo {
+        max-width: 50px; /* Smaller logo on very small screens */
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .navbar-brand span {
+        display: none; /* Hide the text on very small screens */
+    }
+}
+/* Footer */
+.footer {
+    background-color: rgba(248, 248, 248, 1);
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-logo {
+    max-width: 90px; /* Set the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-heading {
+    margin-bottom: 1rem;
+}
+
+.gray-icon {
+    color: #113514;
+    font-size: 1.2rem;
+}
+
+.gray-icon:hover {
+    color: darkgray;
+}
+
+.footer-divider {
+    border-top: 1px solid #dee2e6;
+    margin: 1.5rem 0;
+}
+
+.list-unstyled.d-flex.justify-content-start > li {
+    margin-right: 1rem;
+}
+
+.list-unstyled.d-flex.justify-content-center > li {
+    margin-right: 1rem;
+}
+
+.header, .content-wrapper, .footer {
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: 1.5rem;
+    }
+    .footer-heading h1 {
+        font-size: 1.6rem;
+    }
+    
+    .footer p .footer-subheading {
+        font-size: 1rem;
+    }
+    
+    .gray-icon {
+        font-size: 1rem;
+    }
+    
+    .list-unstyled.d-flex.justify-content-start > li,
+    .list-unstyled.d-flex.justify-content-center > li {
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-heading {
+        font-size: 1.5rem;
+    }
+    
+    .footer p {
+        font-size: 1rem;
+    }
+    
+    .gray-icon {
+        font-size: 1rem;
+    }
+    
+    .list-unstyled.d-flex.justify-content-start > li,
+    .list-unstyled.d-flex.justify-content-center > li {
+        margin-right: 0.25rem;
+    }
+}
+
+/* projects, about me & services */
+
+/*portfolio section on the home page */
+
+#portfolio {
+    background-color: rgba(248, 248, 248, 1);
+}
+
+#boder-radius {
+    border: solid 1px #dbb138;
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+a { color: #0f0f0f!important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+div.project {
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+
+div.project h3, div.home-service h3 {
+    margin-bottom: 10px;
+}
+
+div.project p, div.home-service p {
+    margin-bottom: 10px;
+}
+
+div.project a, div.home-service a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*Project pages */
+div.project-page-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .project-page-image {
+        margin-bottom: 15px;
+    }
+
+    .project-description {
+        font-size: 1em;
+    }
+
+    h2.project-title{
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-description {
+        font-size: 1em;
+    }
+}
+
+/* Shared image styles for portfolio, about me, and introduction sections */
+.project-image,
+.aboutme-image,
+.intro-image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+
+}
+
+.project-image img,
+.aboutme-image img,
+.intro-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+}
+
+/* Responsive adjustments for the project, about me, and introduction sections */
+@media (max-width: 768px) {
+    .project, .aboutme, .intro-image {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .project h3, .aboutme h3, .intro-image h3 {
+        font-size: 1.3em;
+        margin-top: revert;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        margin-bottom: 5px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project h3, .aboutme h3, .intro-image h3 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+        margin: 1em;
+        margin-bottom: 5px;
+    }
+
+    main h1 {
+        margin-bottom: 5px;
+        font-size: 1.8em;
+    }
+}
+
+/* Contact
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+} */
+
+/* Contact Information Section */
+.content-section {
+    text-align: center;
+    padding: 0 15px; /* Add padding to the sides for responsiveness */
+}
+
+.contact-info p {
+    font-size: 1.1em; /* Adjust font size */
+    line-height: 1.5; /* Add line-height for better readability */
+    margin: 10px 0; /* Add margin between contact details */
+}
+
+.contact-info i {
+    color: #375c4d; /* Icon color */
+}
+
+.contact-info a {
+    color: #375c4d; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-divider {
+    margin: 20px auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .footer-divider {
+        width: 75%; /* Adjust divider width for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info p {
+        font-size: 1em; /* Adjust font size for very small screens */
+    }
+
+    .footer-divider {
+        width: 90%; /* Adjust divider width for very small screens */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust font size for very small screens */
+    }
+}
+
+/* services.html Styles */
+.page-services-section {
+    margin: 7rem 0;
+}
+
+.page-services-section .page-section-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-services-section .page-service-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.page-services-section .page-service-description {
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.page-services-section .page-service-image {
+    display: block;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.page-services-section .page-service-image:hover {
+    transform: scale(1.05);
+}
+
+.page-services-section .page-description-content {
+    overflow: hidden;
+    position: relative;
+}
+
+.page-services-section .page-description-full {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.page-services-section .page-description-full.show {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.page-services-section .page-read-more {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .page-services-section .page-service-title {
+        font-size: 28px;
+    }
+
+    .page-services-section .page-service-description {
+        font-size: 14px;
+    }
+
+    .page-services-section .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .page-services-section {
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-services-section .page-section-title {
+        font-size: 28px;
+    }
+
+    .page-services-section .page-service-title {
+        font-size: 18px;
+    }
+
+    .page-services-section .page-service-description {
+        font-size: 13px;
+    }
+
+    .page-services-section {
+        margin: 2rem 0;
+    }
+    .content-section h2{
+        font-size: 1.8em;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .page-services-section .page-section-title {
+        font-size: 20px;
+    }
+
+    .page-services-section .page-service-title {
+        font-size: 16px;
+    }
+
+    .page-services-section .page-service-description {
+        font-size: 12px;
+    }
+
+    .page-services-section {
+        margin: 1rem 0;
+    }
+}
+/*Introduction section 
+
+#intro-image {
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left 
+}
+
+*/
+
+/*about me section
+#aboutme-image {
+    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+
+
+/* buttons */
+
+#btn-green-leaf {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(55, 128, 107, 1); /* Green leaf color */
+    border-radius: 20px 5px 20px 5px; /* Top-left, top-right, bottom-right, bottom-left */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust font size as needed */
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Ensure the text doesn't wrap */
+}
+
+a#btn-green-leaf.btn {
+    color: #fff!important;
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+    #btn-green-leaf {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #btn-green-leaf {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+        padding: 6px 12px; /* Further adjust padding for very small screens */
+    }
+}
+
+/* Ensure the button text is white */
+a#btn-green-leaf{
+    color: #fff!important;
+}
+
+/* Button hover effect */
+#btn-green-leaf:hover {
+    background-color: rgba(45, 118, 97, 1); /* Darker green on hover */
+}
+
+/* Custome Margin */
+
+.m-7 {
+    margin: 7rem;
+}
+
+/* Home Services-section Design */
+.content-section {
+    text-align: center;
+    padding: 0; /* Add padding to the sides for responsiveness */
+}
+
+.home-service-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow services to wrap to the next line on smaller screens */
+}
+
+.home-service {
+    position: relative;
+    width: calc(33.33% - 20px); /* Adjust this width for responsiveness */
+    max-width: 350px; /* Maximum width */
+    height: auto; /* Auto height to accommodate text */
+    overflow: hidden; /* Hide any content that may overflow the shape */
+    margin-bottom: 30px; /* Add margin between services */
+    border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    padding: 15px; /* Add padding inside the service boxes */
+    box-sizing: border-box; /* Ensure padding is included in the total width/height */
+    box-shadow: 0px 7px 10px rgb(0 0 0 / 17%);
+}
+
+div.home-service h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Adjust font size for h3 elements within services */
+    font-weight: bold; /* Ensure the font weight is bold */
+}
+
+div.home-service p {
+    font-size: 1em; /* Adjust font size for paragraphs */
+    line-height: 1.5; /* Add line-height for better readability */
+}
+
+/* Service background colors */
+.home-service:nth-child(1)::before,
+.home-service:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-color: #b18b61;
+    border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    background-color: rgba(55, 128, 107, 1); /* First and fifth service */
+    z-index: -1;
+}
+
+.home-service:nth-child(2)::before,
+.home-service:nth-child(6)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-color: #b18b61;
+    border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    background-color: rgba(202, 168, 146, 1); /* Second and sixth service */
+    z-index: -1;
+}
+
+/* Apply 3D shadow effect to the pseudo-elements of services 3 and 4 */
+.home-service:nth-child(3)::before,
+.home-service:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-color: #b18b61;
+    border-radius: 50px 20px 30px 10px; /* Top-left, top-right, bottom-right, bottom-left */
+    z-index: -1;
+}
+
+/* Set font color to white for services with specific backgrounds */
+.home-service:nth-child(1),
+.home-service:nth-child(2),
+.home-service:nth-child(5),
+.home-service:nth-child(6)::before,
+.home-service:nth-child(2)::before {
+    color: #fff;
+}
+
+.home-service:nth-child(1),
+.home-service:nth-child(5),
+.home-service:nth-child(6),
+.home-service:nth-child(2)::before,
+.home-service:nth-child(1) h3,
+.home-service:nth-child(5) h3,
+.home-service:nth-child(2) h3,
+.home-service:nth-child(6) h3 {
+    color: #fff;
+}
+
+.home-service h3,
+.home-service p {
+    position: relative;
+    z-index: 1; /* Ensure text content is above the background shape */
+    margin: 0; /* Remove default margins */
+    padding: 5px; /* Add padding inside the shape */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .home-service {
+        width: calc(50% - 20px); /* Two services per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-service {
+        width: calc(100% - 20px); /* Single service per row on even smaller screens */
+    }
+
+    div.home-service h3 {
+        font-size: 1.2em; /* Adjust font size for h3 elements within services */
+    }
+
+    div.home-service p {
+        font-size: 1em; /* Adjust font size for paragraphs */
+    }
+}
+
+/* Contact form*/
+
+.contact-title {
+    font-size: 2rem;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.4rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
