@@ -160,8 +160,7 @@ else:
     EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
     EMAIL_HOST_USER = config("EMAIL_HOST_USER")
     EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-    #ADMINS = config("ADMINS", cast=Csv())
-    ADMINS = [('Dounia', 'douniazedbacha@gmail.com')]
+    ADMINS = eval(config("ADMINS"))
 
 # Logging configuration
 LOGGING = {
