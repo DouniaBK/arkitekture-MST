@@ -35,6 +35,7 @@ DEBUG = os.environ.get("DEBUG", "False") == "True"
 ALLOWED_HOSTS = [
     "8000-douniabk-arkitekturemst-s1lqtzf9vd1.ws-eu114.gitpod.io",
     "8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io",
+    "arkitekture-mst-3552b25f4f28.herokuapp.com",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io"
