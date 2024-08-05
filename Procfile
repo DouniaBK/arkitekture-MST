@@ -1,1 +1,1 @@
-web: gunicorn arkitechture.wsgi
+web: gunicorn arkitechture.wsgi:application
