@@ -29,16 +29,14 @@ Die folgende Nachricht wurde via das Kontaktformular gesendet:
 
 Name: {name}
 Email: {email}
-Nachricht: {message}
+Nachricht:
+
+{message}
 
 """
 
-                email = EmailMessage('Hello', body, "douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
-
-                if email.send():
-                    print(" ------------------ YEEEAAAAHHHHHHH ------------------")
-                else: 
-                    print(" ------------------ NAAAAAAAAAAAAAA ------------------")
+                email = EmailMessage('Kontaktformular Nachricht', body, settings.EMAIL_HOST_USER, [settings.EMAIL_HOST_USER,])
+                email.send()
 
                 return redirect("contact_success")
             except Exception as e:

@@ -157,23 +157,12 @@ else:
         "EMAIL_BACKEND", default="django.core.mail.backends.console.EmailBackend"
     )
 
-'''
 EMAIL_HOST = config("EMAIL_HOST", default="smtp.gmail.com")
 EMAIL_PORT = config("EMAIL_PORT", cast=int)
-EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool)
+EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool, default=True)
 EMAIL_HOST_USER = config("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 ADMINS = eval(config("ADMINS"))
-'''
-
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "douniazedbacha@gmail.com"
-EMAIL_HOST_PASSWORD = "rnkwhflydgaltftk"
-
-
 
 # Logging configuration
 LOGGING = {
