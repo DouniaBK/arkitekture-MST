@@ -23,7 +23,20 @@ def contact_view(request):
 
             try:
                 # Send email
-                email = EmailMessage('Hello', 'World',"douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
+                body = """Hello,
+
+                        This is a multiline email sent from Django.
+
+                        Here are the details:
+                        - Point 1: Information about point 1.
+                        - Point 2: Information about point 2.
+                        - Point 3: Information about point 3.
+
+                        Best regards,
+                        Your Company Name
+                        """
+
+                email = EmailMessage('Hello', body, "douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
 
                 if email.send():
                     print(" ------------------ YEEEAAAAHHHHHHH ------------------")
