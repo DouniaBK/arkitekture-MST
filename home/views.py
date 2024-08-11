@@ -23,17 +23,14 @@ def contact_view(request):
 
             try:
                 # Send email
-                body = """Hello,
+                body = f"""Hi,
 
-This is a multiline email sent from Django.
+Die folgende Nachricht wurde via das Kontaktformular gesendet:
 
-Here are the details:
-- Point 1: Information about point 1.
-- Point 2: Information about point 2.
-- Point 3: Information about point 3.
+Name: {name}
+Email: {email}
+Nachricht: {message}
 
-Best regards,
-Your Company Name
 """
 
                 email = EmailMessage('Hello', body, "douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
@@ -43,14 +40,6 @@ Your Company Name
                 else: 
                     print(" ------------------ NAAAAAAAAAAAAAA ------------------")
 
-                '''
-                send_mail(
-                    f"Contact Form Submission from {name}",
-                    message,
-                    "douniazedbacha@gmail.com",
-                    ['douniazedbacha@gmail.com',]
-                )'''
-                
                 return redirect("contact_success")
             except Exception as e:
                 logger.error(
