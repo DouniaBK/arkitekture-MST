@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from .forms import ContactForm
 from django.http import HttpResponse
+from django.core.mail import EmailMessage
 import environ
 
 env = environ.Env()
@@ -22,14 +23,22 @@ def contact_view(request):
 
             try:
                 # Send email
+                email = EmailMessage('Hello', 'World',"douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
+
+                if email.send():
+                    print(" ------------------ YEEEAAAAHHHHHHH ------------------")
+                else: 
+                    print(" ------------------ NAAAAAAAAAAAAAA ------------------")
+
+                '''
                 send_mail(
                     f"Contact Form Submission from {name}",
                     message,
-                    email,
-                    [settings.EMAIL_HOST_USER],
-                    fail_silently=False,
-                )
-                return redirect("contact_success")
+                    "douniazedbacha@gmail.com",
+                    ['douniazedbacha@gmail.com',]
+                )'''
+                
+                #return redirect("contact_success")
             except Exception as e:
                 logger.error(
                     "Error sending contact form email to Architekturbüro Starke-Thomsen",
