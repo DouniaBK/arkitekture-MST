@@ -51,7 +51,7 @@ Your Company Name
                     ['douniazedbacha@gmail.com',]
                 )'''
                 
-                #return redirect("contact_success")
+                return redirect("contact_success")
             except Exception as e:
                 logger.error(
                     "Error sending contact form email to Architekturbüro Starke-Thomsen",
