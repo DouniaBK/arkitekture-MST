@@ -36,7 +36,7 @@ Best regards,
 Your Company Name
 """
 
-                email = EmailMessage('Hello', 'World',"douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
+                email = EmailMessage('Hello', body, "douniazedbacha@gmail.com", ["douniazedbacha@gmail.com",])
 
                 if email.send():
                     print(" ------------------ YEEEAAAAHHHHHHH ------------------")
