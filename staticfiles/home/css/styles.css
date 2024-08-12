@@ -29,6 +29,17 @@ body {
     margin-bottom: 10px;
 }
 
+.navbar-brand {
+    display: flex!important;
+    align-content: center !important;
+    align-items: center ;
+}
+
+.navbar-font {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
 .navbar-logo {
     max-width: 80px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
@@ -215,7 +226,7 @@ body {
 }
 
 #boder-radius {
-    border: solid 1px #dbb138;
+    border: solid 1px #155724;
     border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
 }
 
@@ -237,6 +248,11 @@ div.project {
     padding: 10px;
     margin-bottom: 40px;
     border-radius: 5px;
+}
+
+div.project h3 {
+    font-size: 1.7rem;
+
 }
 
 
