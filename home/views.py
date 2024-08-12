@@ -23,9 +23,7 @@ def contact_view(request):
 
             try:
                 # Send email
-                body = f"""Hi,
-
-Die folgende Nachricht wurde via das Kontaktformular gesendet:
+                body = f"""Die folgende Nachricht wurde über das Kontaktformular gesendet:
 
 Name: {name}
 Email: {email}

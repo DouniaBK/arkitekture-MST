@@ -29,6 +29,17 @@ body {
     margin-bottom: 10px;
 }
 
+.navbar-brand {
+    display: flex!important;
+    align-content: center !important;
+    align-items: center ;
+}
+
+.navbar-font {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
 .navbar-logo {
     max-width: 80px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
