@@ -250,6 +250,11 @@ div.project {
     border-radius: 5px;
 }
 
+div.project h3 {
+    font-size: 1.7rem;
+
+}
+
 
 div.project h3, div.home-service h3 {
     margin-bottom: 10px;
