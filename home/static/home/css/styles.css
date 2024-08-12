@@ -226,7 +226,7 @@ body {
 }
 
 #boder-radius {
-    border: solid 1px #dbb138;
+    border: solid 1px #155724;
     border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
 }
 
