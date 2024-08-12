@@ -474,21 +474,30 @@ div.project-page-image {
     transform: scale(1.05);
 }
 
+/* Adjusted CSS for "Read more" functionality */
 .page-services-section .page-description-content {
     overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    opacity: 0;
     position: relative;
 }
 
-.page-services-section .page-description-full {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
+.page-services-section .page-description-content.show {
+    max-height: 1000px; /* Adjust this to be large enough for the content */
+    opacity: 1;
 }
 
-.page-services-section .page-description-full.show {
-    max-height: 1000px;
-    opacity: 1;
+.page-services-section .page-description-full {
+    padding: 0;
+    margin: 0;
+}
+
+.page-services-section .page-read-more {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
 }
 
 .page-services-section .page-read-more {

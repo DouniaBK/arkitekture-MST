@@ -13,9 +13,9 @@ Unsere Leistungen | Architekturbüro Starke-Thomsen | Schwabmünchen
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen</h1>
+            <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen in Schwabmünchen</h1>
             <p class="text-justify">
-                Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau, Energieberatung und Denkmalpflege aus Schwabmünchen. Mit über zehnjähriger Erfahrung decke ich alle Bereiche des architektonischen Leistungsspektrums ab – individuell, gewissenhaft und zuverlässig. Damit auch Ihr Projekt den Weg vom Gedanken zur Realisierung schafft: Ich begleite Sie in jeder Phase Ihres Vorhabens. Für weitere Informationen oder eine Erstberatung folgen Sie gerne den Links zu den einzelnen Leistungskapiteln oder nehmen Sie gleich direkt mit mir Kontakt auf – Ich freue mich auf Ihre Anfrage.
+                Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau, Energieberatung und Denkmalpflege aus <bold>Schwabmünchen</bold>. Mit über zehnjähriger Erfahrung decke ich alle Bereiche des architektonischen Leistungsspektrums ab – individuell, gewissenhaft und zuverlässig. Damit auch Ihr Projekt den Weg vom Gedanken zur Realisierung schafft: Ich begleite Sie in jeder Phase Ihres Vorhabens. Für weitere Informationen oder eine Erstberatung folgen Sie gerne den Links zu den einzelnen Leistungskapiteln oder nehmen Sie gleich direkt mit mir Kontakt auf – Ich freue mich auf Ihre Anfrage.
             </p>
         </div>
     </div>
@@ -148,26 +148,25 @@ Unsere Leistungen | Architekturbüro Starke-Thomsen | Schwabmünchen
 </div>
 
 <script>
-    function toggleDescription(event) {
-        event.preventDefault();
-        const link = event.currentTarget;
-        const descriptionContent = link.closest(".page-service-description").nextElementSibling;
+function toggleDescription(event) {
+    event.preventDefault();
+    const link = event.currentTarget;
+    const descriptionContent = link.closest(".page-service-description").nextElementSibling;
 
-        if (descriptionContent.classList.contains("show")) {
-            descriptionContent.classList.remove("show");
-            descriptionContent.style.maxHeight = "0";
-            descriptionContent.style.opacity = "0";
-        } else {
-            descriptionContent.classList.add("show");
-            descriptionContent.style.maxHeight = descriptionContent.scrollHeight + "px";
-            descriptionContent.style.opacity = "1";
-        }
-    }
+    // Expand and reveal the description content by setting max-height to none
+    descriptionContent.classList.add("show");
+    descriptionContent.style.maxHeight = "none"; // Allow the content to fully expand
+    descriptionContent.style.opacity = "1";
 
-    // Initialize: hide full descriptions by default
-    document.querySelectorAll(".page-description-full").forEach((element) => {
-        element.style.maxHeight = "0";
-        element.style.opacity = "0";
-    });
+    // Remove the "Read more" link after expanding
+    link.style.display = 'none';
+}
+
+// Initialize: hide full descriptions by default
+document.querySelectorAll(".page-description-full").forEach((element) => {
+    element.style.maxHeight = "0";
+    element.style.opacity = "0";
+    element.style.overflow = "hidden";
+});
 </script>
 {% endblock %}
