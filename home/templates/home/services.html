@@ -1,245 +1,181 @@
-{% extends 'home/base.html' %} {% load static %} {% block title %} Unsere
-Leistungen | Architekturbüro Starke-Thomsen | Schwabmünchen {% endblock %} {%
-block meta_description %}
-<meta
-  name="description"
-  content="Entdecken Sie unser breites Spektrum an Architekturleistungen in Schwabmünchen. Von der Planung bis zur Ausführung bieten wir umfassende Leistungen für Ihr Bauprojekt."
-/>
-{% endblock %} {% block content %}
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+Unsere Leistungen | Architekturbüro Starke-Thomsen | Schwabmünchen
+{% endblock %}
+
+{% block meta_description %}
+<meta name="description" content="Entdecken Sie unser breites Spektrum an Architekturleistungen in Schwabmünchen. Von der Planung bis zur Ausführung bieten wir umfassende Leistungen für Ihr Bauprojekt." />
+{% endblock %}
+
+{% block content %}
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="fw-bold text-center mb-4">
-        Architekturbüro Starke-Thomsen in Schwabmünchen
-      </h1>
-      <p class="text-justify">
-        Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau,
-        Energieberatung und Denkmalpflege aus <bold>Schwabmünchen</bold>. Mit
-        über zehnjähriger Erfahrung decke ich alle Bereiche des
-        architektonischen Leistungsspektrums ab – individuell, gewissenhaft und
-        zuverlässig. Damit auch Ihr Projekt den Weg vom Gedanken zur
-        Realisierung schafft: Ich begleite Sie in jeder Phase Ihres Vorhabens.
-        Für weitere Informationen oder eine Erstberatung folgen Sie gerne den
-        Links zu den einzelnen Leistungskapiteln oder nehmen Sie gleich direkt
-        mit mir Kontakt auf – Ich freue mich auf Ihre Anfrage.
-      </p>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="fw-bold text-center mb-4">Architekturbüro Starke-Thomsen in Schwabmünchen</h1>
+            <p class="text-justify">
+                Ihr kompetentes Architekturbüro für Planung, Sanierung, Umbau, Energieberatung und Denkmalpflege aus <bold>Schwabmünchen</bold>. Mit über zehnjähriger Erfahrung decke ich alle Bereiche des architektonischen Leistungsspektrums ab – individuell, gewissenhaft und zuverlässig. Damit auch Ihr Projekt den Weg vom Gedanken zur Realisierung schafft: Ich begleite Sie in jeder Phase Ihres Vorhabens. Für weitere Informationen oder eine Erstberatung folgen Sie gerne den Links zu den einzelnen Leistungskapiteln oder nehmen Sie gleich direkt mit mir Kontakt auf – Ich freue mich auf Ihre Anfrage.
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- Services Section -->
 <section class="page-services-section mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="page-section-title text-start mb-5">Leistungen</h2>
-      </div>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-section-title text-start mb-5">Leistungen</h2>
+            </div>
+        </div>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/energieberatung2.png' %}"
-          alt="Energieberatung"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Energieberatung</h3>
-        <p class="page-service-description">
-          Als staatlich anerkannte Energieeffizienzexpertin berate ich Sie zur
-          fachgerechten, energetischen Sanierung Ihres Bestandgebäudes und zeige
-          Ihnen hierüber mögliche Einsparpotentiale auf...
-          <a href="#" class="page-read-more" onclick="toggleDescription(event)"
-            >Read more</a
-          >
-        </p>
-        <div class="page-description-content">
-          <div class="page-description-full">
-            <p>
-              Durch meine Zusatzqualifikation in diesem Bereich ist es mir
-              möglich auf staatliche Fördermöglichkeiten zugreifen zu können.
-              Grundlage hierfür ist der iFSP, der individuelle
-              Sanierungsfahrplan, der bei der KfW und Bafa Grundlage zur
-              Antragsstellung der Förderungen ist. Aber auch im Rahmen von
-              Objektverkäufen kann ich Ihnen den einfacheren Energieausweis
-              erstellen, der mittlerweile gesetzlich gefordert wird.
-            </p>
-          </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/energieberatung2.png' %}" alt="Energieberatung" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Energieberatung</h3>
+                <p class="page-service-description">
+                    Als staatlich anerkannte Energieeffizienzexpertin berate ich Sie zur fachgerechten, energetischen Sanierung Ihres Bestandgebäudes und zeige Ihnen hierüber mögliche Einsparpotentiale auf...
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p>
+                            Durch meine Zusatzqualifikation in diesem Bereich ist es mir möglich auf staatliche Fördermöglichkeiten zugreifen zu können. Grundlage hierfür ist der iFSP, der individuelle Sanierungsfahrplan, der bei der KfW und Bafa Grundlage zur Antragsstellung der Förderungen ist. Aber auch im Rahmen von Objektverkäufen kann ich Ihnen den einfacheren Energieausweis erstellen, der mittlerweile gesetzlich gefordert wird.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/sanierung (2).png' %}" alt="Sanierung" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Sanierung</h3>
+                <p class="page-service-description">
+                    Individuell für Ihr Sanierungsvorhaben erstelle ich Ihnen die passenden Pläne, reiche notwendige Bauanträge ein und unterstütze Sie bei der Beantragung der staatlichen Förderungen...
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p>
+                            Sollten Sie eine Baubegleitung für die energetische Sanierung Ihres Gebäudes benötigen, kann ich Ihnen als staatlich anerkannte Energieeffizienzexpertin auch hierbei mit Rat und Tat zur Seite stehen.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/sanierung (2).png' %}"
-          alt="Sanierung"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Sanierung</h3>
-        <p class="page-service-description">
-          Individuell für Ihr Sanierungsvorhaben erstelle ich Ihnen die
-          passenden Pläne, reiche notwendige Bauanträge ein und unterstütze Sie
-          bei der Beantragung der staatlichen Förderungen.
-          Sollten Sie eine Baubegleitung für die energetische Sanierung
-          Ihres Gebäudes benötigen, kann ich Ihnen als staatlich anerkannte
-          Energieeffizienzexpertin auch hierbei mit Rat und Tat zur Seite
-          stehen.
-        </p>
-      </div>
-    </div>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/planung2a.png' %}"
-          alt="Planung"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Planung</h3>
-        <p class="page-service-description">
-          Am Anfang steht der Wunsch der Veränderung der Wohnsituation: Das
-          bestehende Haus ist zu klein oder beim Auszug der Kinder zu groß oder
-          nicht altersgerecht bzw. barrierefrei...
-          <a href="#" class="page-read-more" onclick="toggleDescription(event)"
-            >Read more</a
-          >
-        </p>
-        <div class="page-description-content">
-          <div class="page-description-full">
-            <p>
-              Der Bestand muss modernisiert und zukunftsfähig gemacht werden
-              oder ein Grundstück soll im Rahmen eines Investments effektiv
-              bebaut werden oder Sie wünschen einen beheizten Wintergarten, eine
-              zusätzliche Garage oder eine größere Werkstatt – es gibt viele
-              Aspekte, die im Umgang mit der Planung dieser Projekte bedacht
-              werden müssen, sowie unzählige Bauvorschriften die zu beachten
-              sind. In jeder Leistungsphase Ihres Projektes, von der
-              Niederschrift Ihrer Gedanken und Wünsche, der kooperativen
-              Besprechung zur Realisierbarkeit, über die Einholung der
-              Baugenehmigung nach Erstellung der Baupläne bis zum Ausarbeiten
-              der Detail- oder Ausführungsplanungen für die ausführenden Gewerke
-              stehe ich Ihnen mit meinen Dienstleistungen und meiner Erfahrung
-              zur Seite.
-            </p>
-          </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/planung2a.png' %}" alt="Planung" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Planung</h3>
+                <p class="page-service-description">
+                    Am Anfang steht der Wunsch der Veränderung der Wohnsituation: Das bestehende Haus ist zu klein oder beim Auszug der Kinder zu groß oder nicht altersgerecht bzw. barrierefrei...
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p>
+                            Der Bestand muss modernisiert und zukunftsfähig gemacht werden oder ein Grundstück soll im Rahmen eines Investments effektiv bebaut werden oder Sie wünschen einen beheizten Wintergarten, eine zusätzliche Garage oder eine größere Werkstatt – es gibt viele Aspekte, die im Umgang mit der Planung dieser Projekte bedacht werden müssen, sowie unzählige Bauvorschriften die zu beachten sind. In jeder Leistungsphase Ihres Projektes, von der Niederschrift Ihrer Gedanken und Wünsche, der kooperativen Besprechung zur Realisierbarkeit, über die Einholung der Baugenehmigung nach Erstellung der Baupläne bis zum Ausarbeiten der Detail- oder Ausführungsplanungen für die ausführenden Gewerke stehe ich Ihnen mit meinen Dienstleistungen und meiner Erfahrung zur Seite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/denkmalpflege2.png' %}" alt="Denkmalpflege" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Denkmalpflege</h3>
+                <p class="page-service-description">
+                    Geschichte zu erhalten ist mir stets ein besonderes Anliegen. Insbesondere die Historie alter Gebäude zu wahren und fortzusetzten motivierte mich, mich in der Denkmalpflege zu spezialisieren...
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p>
+                            Dies bietet Ihnen die Möglichkeiten die große Anzahl gesetzlicher Vorgaben mit dem Wunsch nach moderner Nutzung in Einklang zu bringen.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/denkmalpflege2.png' %}"
-          alt="Denkmalpflege"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Denkmalpflege</h3>
-        <p class="page-service-description">
-          Geschichte zu erhalten ist mir stets ein besonderes Anliegen.
-          Insbesondere die Historie alter Gebäude zu wahren und fortzusetzten
-          motivierte mich, mich in der Denkmalpflege zu spezialisieren...
-          <a href="#" class="page-read-more" onclick="toggleDescription(event)"
-            >Read more</a
-          >
-        </p>
-        <div class="page-description-content">
-          <div class="page-description-full">
-            <p>
-              Dies bietet Ihnen die Möglichkeiten die große Anzahl gesetzlicher
-              Vorgaben mit dem Wunsch nach moderner Nutzung in Einklang zu
-              bringen.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/umbau2.png' %}"
-          alt="Umbau"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Umbau</h3>
-        <p class="page-service-description">
-          Manchmal muss ein Gebäude an die neuen, aktuellen Nutzungs- und
-          Wohnanforderungen angepasst werden. Hierbei unterstütze ich Ihre
-          Planung dieser Umbaumaßnahmen...
-          <a href="#" class="page-read-more" onclick="toggleDescription(event)"
-            >Read more</a
-          >
-        </p>
-        <div class="page-description-content">
-          <div class="page-description-full">
-            <p>
-              Mein Repertoire umfasst die Umgestaltung bestehender Räume im
-              Kontext der Kubatur, oder, bspw. die Erweiterung mit Wintergärten
-              oder den Neubau von Garagen und Werkstätten. Hierzu berate ich Sie
-              sehr gerne und erstelle Ihnen die notwendigen Pläne und
-              Antragsunterlagen.
-            </p>
-          </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/umbau2.png' %}" alt="Umbau" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Umbau</h3>
+                <p class="page-service-description">
+                    Manchmal muss ein Gebäude an die neuen, aktuellen Nutzungs- und Wohnanforderungen angepasst werden. Hierbei unterstütze ich Ihre Planung dieser Umbaumaßnahmen...
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p>
+                            Mein Repertoire umfasst die Umgestaltung bestehender Räume im Kontext der Kubatur, oder, bspw. die Erweiterung mit Wintergärten oder den Neubau von Garagen und Werkstätten. Hierzu berate ich Sie sehr gerne und erstelle Ihnen die notwendigen Pläne und Antragsunterlagen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static 'home/images/services/baubegleitung2.png' %}" alt="Baubegleitung" class="page-service-image img-fluid" />
+                <h3 class="page-service-title">Baubegleitung</h3>
+                <p class="page-service-description">
+                    Ihre Baupläne wurden genehmigt, Ihr Projekt wird realisiert? Damit Ihr Risiko als Bauherren minimiert wird, biete ich eine professionelle Baubegleitung an. Denn Vertrauen ist gut – aber Kontrolle besser.
+                    <a href="#" class="page-read-more" onclick="toggleDescription(event)">Read more</a>
+                </p>
+                <div class="page-description-content">
+                    <div class="page-description-full">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <img
-          src="{% static 'home/images/services/baubegleitung2.png' %}"
-          alt="Baubegleitung"
-          class="page-service-image img-fluid"
-        />
-        <h3 class="page-service-title">Baubegleitung</h3>
-        <p class="page-service-description">
-          Ihre Baupläne wurden genehmigt, Ihr Projekt wird realisiert? Damit Ihr
-          Risiko als Bauherren minimiert wird, biete ich eine professionelle
-          Baubegleitung an. Denn Vertrauen ist gut – aber Kontrolle besser.
-        </p>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- Contact information section -->
 <div class="container m-7">
-  <div class="content-section">
-    <h2 class="m-5">So erreichen Sie mich</h2>
-    <hr class="footer-divider" />
-    <div class="contact-info">
-      <p>
-        <i class="fas fa-envelope p-2"></i>
-        <a href="mailto:info@architektur-starke-thomsen.de"
-          >info@architektur-starke-thomsen.de</a
-        >
-      </p>
-      <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
+    <div class="content-section">
+        <h2 class="m-5">So erreichen Sie mich</h2>
+        <hr class="footer-divider" />
+        <div class="contact-info">
+            <p>
+                <i class="fas fa-envelope p-2"></i>
+                <a href="mailto:info@architektur-starke-thomsen.de">info@architektur-starke-thomsen.de</a>
+            </p>
+            <p><i class="fas fa-phone p-2"></i> 08232 / 5054030</p>
+        </div>
+        <div class="text-center m-4">
+            <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Kontakt</a>
+        </div>
     </div>
-    <div class="text-center m-4">
-      <a href="{% url 'contact' %}" class="btn" id="btn-green-leaf">Kontakt</a>
-    </div>
-  </div>
 </div>
 
 <script>
-  function toggleDescription(event) {
+function toggleDescription(event) {
     event.preventDefault();
     const link = event.currentTarget;
-    const descriptionContent = link.closest(
-      ".page-service-description"
-    ).nextElementSibling;
+    const descriptionContent = link.closest(".page-service-description").nextElementSibling; // returns the element with class "page-description-content"
+    const serviceDescription = link.closest(".page-service-description"); // returns the element with class "page-description-content"
+
+    console.log("descriptionContent", descriptionContent)
 
     // Toggle the "show" class to control visibility
     if (descriptionContent.classList.contains("show")) {
-      descriptionContent.classList.remove("show");
-      descriptionContent.style.maxHeight = "0";
-      descriptionContent.style.opacity = "0";
-      link.textContent = "Read more"; // Change link text back to "Read more"
+        descriptionContent.classList.remove("show");
+        descriptionContent.classList.add("hide");
+        //descriptionContent.style.maxHeight = "0";
+        //descriptionContent.style.opacity = "0";
+        link.textContent = "Read more"; // Change link text back to "Read more"
     } else {
-      descriptionContent.classList.add("show");
-      descriptionContent.style.maxHeight =
-        descriptionContent.scrollHeight + "px"; // Fit content height
-      descriptionContent.style.opacity = "1";
-      link.textContent = "Read less"; // Change link text to "Read less"
+        descriptionContent.classList.add("show");
+        descriptionContent.classList.remove("hide");
+        //descriptionContent.style.maxHeight = "100vh"//descriptionContent.scrollHeight + "px"; // Fit content height
+        //descriptionContent.style.opacity = "1";
+        link.textContent = "Read less"; // Change link text to "Read less"
     }
-  }
+}
 
-  // Initialize: hide full descriptions by default
-  document.querySelectorAll(".page-description-full").forEach((element) => {
-    element.style.maxHeight = "0";
-    element.style.opacity = "0";
-  });
+// Initialize: hide full descriptions by default
+document.querySelectorAll(".page-description-full").forEach((element) => {
+//    element.style.maxHeight = "0";
+//    element.style.opacity = "0";
+});
 </script>
 {% endblock %}

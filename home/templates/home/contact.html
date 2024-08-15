@@ -16,7 +16,7 @@
     <div class="row mt-5 justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
             <h3 class="contact-subtitle">Kontaktformular</h3>
-            <form method="post" action="{% url 'contact' %}">
+            <form class="d-flex flex-column" method="post" action="{% url 'contact' %}">
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="id_name">Name:</label>
@@ -30,7 +30,7 @@
                     <label for="id_message">Nachricht:</label>
                     {{ form.message|add_class:"form-control" }}
                 </div>
-                <button type="submit" class="btn" id="btn-green-leaf">Senden</button>
+                <button type="submit" class="btn align-self-end" id="btn-green-leaf">Senden</button>
             </form>
         </div>
     </div>
