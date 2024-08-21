@@ -23,6 +23,7 @@ body {
     background: #f8f8f8;
     color: #0c0c0c;
     padding: 10px 0;
+    border-bottom: 1px solid #d7d7d7;
 }
 
 .header h1 {
@@ -270,11 +271,12 @@ div.project a, div.home-service a {
 }
 
 /*Project pages */
-div.project-page-image {
+.project-page-image {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;
+    border: solid 1px #d5d5d5;
 }
 
 
@@ -482,13 +484,19 @@ div.project-page-image {
     transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
 }
 
-.page-services-section .page-description-content .show {
+.hidden-text {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.show {
     max-height: 100vh;
+    visibility: visible;
     opacity: 1;
 }
 
-.page-services-section .page-description-content .hide {
+.hide {
     max-height: 0;
+    visibility: hidden;
     opacity: 0;
 }
 

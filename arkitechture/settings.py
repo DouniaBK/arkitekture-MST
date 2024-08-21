@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
     "8000-douniabk-arkitekturemst-s1lqtzf9vd1.ws-eu114.gitpod.io",
     "8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io",
     "arkitekture-mst-3552b25f4f28.herokuapp.com",
+    "8000-douniabk-arkitekturemst-26inzrw0u68.ws-eu115.gitpod.io",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io"
@@ -188,6 +189,16 @@ LOGGING = {
             "handlers": ["console"],
             "level": "DEBUG",
             "propagate": True,
+        },
+        'django.db.backends': {
+            'handlers': ['console'],
+            'level': 'ERROR',  # Adjust to 'ERROR' to suppress INFO logs
+            'propagate': False,
+        },
+        'django.template': {
+            'handlers': ['console'],
+            'level': 'ERROR',
+            'propagate': False,
         },
     },
 }

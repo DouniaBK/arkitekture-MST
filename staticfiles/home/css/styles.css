@@ -270,11 +270,12 @@ div.project a, div.home-service a {
 }
 
 /*Project pages */
-div.project-page-image {
+.project-page-image {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-bottom: 20px;
+    border: solid 1px #d5d5d5;
 }
 
 
@@ -482,15 +483,32 @@ div.project-page-image {
     transition: max-height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
 }
 
-.page-services-section .page-description-full {
-    max-height: 0; /* Start with content hidden */
+.hidden-text {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.show {
+    max-height: 100vh;
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    max-height: 0;
+    visibility: hidden;
     opacity: 0;
+}
+
+
+.page-services-section .page-description-full {
+    /*max-height: 0;  Start with content hidden 
+    opacity: 0;*/
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .page-services-section .page-description-full.show {
-    max-height: 1000px; /* Large enough value to show content */
-    opacity: 1;
+    /* max-height: 1000px; Large enough value to show content
+    opacity: 1; */
 }
 
 .page-services-section .page-read-more {
