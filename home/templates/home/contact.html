@@ -18,19 +18,19 @@
             <h3 class="contact-subtitle">Kontaktformular</h3>
             <form class="d-flex flex-column" method="post" action="{% url 'contact' %}">
                 {% csrf_token %}
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="id_name">Name:</label>
                     {{ form.name|add_class:"form-control" }}
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="id_email">Email:</label>
                     {{ form.email|add_class:"form-control" }}
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <label for="id_message">Nachricht:</label>
                     {{ form.message|add_class:"form-control" }}
                 </div>
-                <button type="submit" class="btn align-self-end" id="btn-green-leaf">Senden</button>
+                <button type="submit" class="btn align-self-end mt-3" id="btn-green-leaf">Senden</button>
             </form>
         </div>
     </div>

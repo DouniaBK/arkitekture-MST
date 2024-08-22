@@ -39,12 +39,26 @@ body {
 .navbar-font {
     font-weight: 500;
     font-size: 1.6rem;
+    margin-left: 10px;
 }
 
 .navbar-logo {
     max-width: 80px; /* Adjust the max-width as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+    .navbar-wrapper {
+      display: unset;
+      margin-top: 10px;
+    }
+}
+
 
 .content-wrapper {
     flex: 1;
@@ -60,12 +74,47 @@ body {
     margin-bottom: 20px;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
+/* For Images to limit max-width to 70%*/
+.max-w-70 {
+    max-width: 70% !important;
+}
+
+/* Oerride Bootstrap for max container width */
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1140px !important;
+    }
+}
+
 /* Sticky navbar */
 .sticky-top {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1030;
+}
+
+.header-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: unset !important; 
+}
+
+.navbar>.container-fluid {
+    justify-content: flex-end !important;
 }
 
 /* Responsive Styles */
@@ -79,7 +128,7 @@ body {
     }
 
     .navbar-nav {
-        text-align: center;
+        text-align: right;
     }
 
     .navbar-nav .nav-item {
@@ -92,6 +141,7 @@ body {
     }
 }
 
+
 @media (max-width: 768px) {
     .header {
         padding: 10px 15px;
@@ -102,7 +152,7 @@ body {
     }
 
     .navbar-nav {
-        text-align: center;
+        text-align: right;
     }
 
     .navbar-nav .nav-item {
@@ -115,7 +165,7 @@ body {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .navbar-logo {
         max-width: 50px; /* Smaller logo on very small screens */
     }
@@ -128,6 +178,9 @@ body {
         display: none; /* Hide the text on very small screens */
     }
 }
+
+
+
 /* Footer */
 .footer {
     background-color: rgba(248, 248, 248, 1);
@@ -444,7 +497,7 @@ div.project a, div.home-service a {
 }
 
 .page-services-section .page-section-title {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 3rem;
@@ -476,6 +529,10 @@ div.project a, div.home-service a {
     transform: scale(1.05);
 }
 
+.text-justify {
+    text-align: justify;
+  }
+
 /* Adjusted CSS for "Read more" functionality */
 /* Ensure the content transitions correctly */
 .page-services-section .page-description-content {
@@ -487,6 +544,7 @@ div.project a, div.home-service a {
 .hidden-text {
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+
 
 .show {
     max-height: 100vh;
