@@ -78,6 +78,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "home.context_processors.current_year",  # context processor
             ],
         },
     },
@@ -190,15 +191,15 @@ LOGGING = {
             "level": "DEBUG",
             "propagate": True,
         },
-        'django.db.backends': {
-            'handlers': ['console'],
-            'level': 'ERROR',  # Adjust to 'ERROR' to suppress INFO logs
-            'propagate': False,
+        "django.db.backends": {
+            "handlers": ["console"],
+            "level": "ERROR",  # Adjust to 'ERROR' to suppress INFO logs
+            "propagate": False,
         },
-        'django.template': {
-            'handlers': ['console'],
-            'level': 'ERROR',
-            'propagate': False,
+        "django.template": {
+            "handlers": ["console"],
+            "level": "ERROR",
+            "propagate": False,
         },
     },
 }

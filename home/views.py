@@ -6,6 +6,7 @@ from .forms import ContactForm
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
 import environ
+from datetime import datetime
 
 env = environ.Env()
 environ.Env.read_env()
@@ -74,7 +75,8 @@ def portfolio_view(request):
 
 
 def footer_view(request):
-    return render(request, "home/footer.html")
+    current_year = datetime.now().year
+    return render(request, "home/footer.html", {'current_year': current_year})
 
 
 def terms_view(request):
@@ -105,6 +107,6 @@ def send_test_email(request):
     subject = 'Test Email'
     message = 'This is a test email sent from Django.'
     email_from = settings.EMAIL_HOST_USER
-    recipient_list = [settings.EMAIL_HOST_USER, ]  # Replace with your email or test recipient
+    recipient_list = [settings.EMAIL_HOST_USER, ]  # Replace with your email/tester's
     send_mail(subject, message, email_from, recipient_list)
     return HttpResponse("Test email sent.")

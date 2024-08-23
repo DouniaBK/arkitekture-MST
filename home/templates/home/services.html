@@ -141,22 +141,16 @@ function toggleDescription(event) {
     if (descriptionContent.classList.contains("show")) {
         descriptionContent.classList.remove("show");
         descriptionContent.classList.add("hide");
-        //descriptionContent.style.maxHeight = "0";
-        //descriptionContent.style.opacity = "0";
         link.textContent = "Read more"; // Change link text back to "Read more"
     } else {
         descriptionContent.classList.add("show");
         descriptionContent.classList.remove("hide");
-        //descriptionContent.style.maxHeight = "100vh"//descriptionContent.scrollHeight + "px"; // Fit content height
-        //descriptionContent.style.opacity = "1";
         link.textContent = "Read less"; // Change link text to "Read less"
     }
 }
 
 // Initialize: hide full descriptions by default
 document.querySelectorAll(".page-description-full").forEach((element) => {
-//    element.style.maxHeight = "0";
-//    element.style.opacity = "0";
 });
 </script>
 {% endblock %}

@@ -424,14 +424,6 @@ div.project a, div.home-service a {
     }
 }
 
-/* Contact
-.contact-info {
-    margin-top: 40px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
-} */
 
 /* Contact Information Section */
 .content-section {
@@ -637,16 +629,6 @@ div.project a, div.home-service a {
     }
 }
 /*Introduction section 
-
-#intro-image {
-    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left 
-}
-
-*/
-
-/*about me section
-#aboutme-image {
-    border-radius: 50px 5px 50px 5px; /* Top-left, top-right, bottom-right, bottom-left */
 
 
 /* buttons */
