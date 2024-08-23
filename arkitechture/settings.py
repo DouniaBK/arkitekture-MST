@@ -37,6 +37,7 @@ ALLOWED_HOSTS = [
     "8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io",
     "arkitekture-mst-3552b25f4f28.herokuapp.com",
     "8000-douniabk-arkitekturemst-26inzrw0u68.ws-eu115.gitpod.io",
+    "www.architektur-starke-thomsen.de",
 ]
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-douniabk-arkitekturemst-6vaqgn5662x.ws-eu115.gitpod.io"
