@@ -229,6 +229,10 @@ a:hover {
     flex-shrink: 0;
 }
 
+.footer-link {
+    text-decoration: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-heading {
@@ -574,10 +578,10 @@ div.project a, div.home-service a {
     .page-services-section .page-service-title {
         font-size: 28px;
     }
-
+    /*
     .page-services-section .page-service-description {
         font-size: 14px;
-    }
+    }*/
 
     .page-services-section .col-md-6 {
         flex: 0 0 100%;
@@ -597,10 +601,10 @@ div.project a, div.home-service a {
     .page-services-section .page-service-title {
         font-size: 18px;
     }
-
+    /*
     .page-services-section .page-service-description {
         font-size: 13px;
-    }
+    }*/
 
     .page-services-section {
         margin: 2rem 0;
@@ -619,10 +623,10 @@ div.project a, div.home-service a {
     .page-services-section .page-service-title {
         font-size: 16px;
     }
-
+    /*
     .page-services-section .page-service-description {
         font-size: 12px;
-    }
+    }*/
 
     .page-services-section {
         margin: 1rem 0;
