@@ -229,8 +229,8 @@ a:hover {
     flex-shrink: 0;
 }
 
-.footer-link {
-    text-decoration: none;
+.footer-link a {
+    text-decoration: none!important;
 }
 
 /* Responsive Design */
